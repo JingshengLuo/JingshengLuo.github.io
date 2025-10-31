@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Zhengqian Jin"
 title_separator          : "-"
 name                     : &name "Zhengqian Jin"
-description              : &description "Zhengqian Jin's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Zhengqian Jin's portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://JingshengLuo.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,15 +23,15 @@ repository               : "JingshengLuo/JingshengLuo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.jpg"
-  name             : "Bruno Leopold"
+  avatar           : "profile.jpg"
+  name             : "Zhengqian Jin"
   pronouns         : "he/him"  
-  bio              : "Some souls touch you more than hands ever could."
+  bio              : "The only real failure is pretending you have all the answers."
   location         : "EKL"
   employer         : #"Red Brick University"
   uri              : # URL
   email            : "omwtbarca@stu.xjtu.edu.cn" 
-  email            : "omwtbarca@gmail.com" 
+  email2            : "omwtbarca@gmail.com" 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
@@ -54,7 +54,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #"bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
