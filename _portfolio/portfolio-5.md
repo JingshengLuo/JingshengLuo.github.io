@@ -16,8 +16,8 @@ excerpt: >
   }
   </style>
 
-  <img src="/images/gallery/IMG_8475.JPG" alt="Photo 1">
+  <img src="/images/gallery/IMG_8475.JPG" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="Photo 1">
 
-  <img src="/images/gallery/IMG_1582.JPG"  alt="Photo 2">
+  <img src="/images/gallery/IMG_1582.JPG"  style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="Photo 2">
 collection: portfolio
 ---
