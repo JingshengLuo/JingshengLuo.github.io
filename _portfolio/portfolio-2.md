@@ -7,7 +7,7 @@ excerpt: >
   .rotate-img {
     transform: rotate(-90deg);               /* 左旋 90° */
     width: 80vw;                             /* 移动端占 80% 视口宽度 */
-    max-width: 500px;                        /* 桌面端最大 500px */
+    max-width: 200px;                        /* 桌面端最大 500px */
     height: auto;                            /* 保持比例 */
     display: block;                          /* 启用 margin:auto 居中 */
     margin: 1.5rem auto;                     /* 上下间距 + 水平居中 */
