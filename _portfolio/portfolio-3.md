@@ -22,9 +22,10 @@ excerpt: >
   </style>
 
   <!-- 示例：第一张左旋 90° -->
-  <img src="/images/gallery/744fad4928cc87fe40cc4a158efd2ecc.JPG"  alt="Photo 1">
+  <img src="/images/gallery/744fad4928cc87fe40cc4a158efd2ecc.JPG" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="Photo 1">
 
   <!-- 示例：第二张倒转 180° -->
-  <img src="/images/gallery/IMG_8659.PNG" alt="Photo 2">
+  <img src="/images/gallery/IMG_8659.PNG" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" alt="Photo 2">
 collection: portfolio
+
 ---
