@@ -6,9 +6,6 @@ excerpt: >
   <style>
   .rotate-img {
     transform: rotate(-90deg);               /* 左旋 90° */
-    width: 80vw;                             /* 移动端占 80% 视口宽度 */
-    max-width: 200px;                        /* 桌面端最大 500px */
-    height: auto;                            /* 保持比例 */
     display: block;                          /* 启用 margin:auto 居中 */
     margin: 1.5rem auto;                     /* 上下间距 + 水平居中 */
     border-radius: 8px;                      /* 可选：圆角 */
@@ -16,8 +13,9 @@ excerpt: >
   }
   </style>
 
-  <img src="/images/gallery/fc8d169b44b4e8dd241610685cd34bd3.png" class="rotate-img" alt="Photo 1">
+  <img src="/images/gallery/fc8d169b44b4e8dd241610685cd34bd3.png" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="rotate-img" alt="Photo 1">
 
-  <img src="/images/gallery/181076e795de0d15c882ecbbc969f57f.png" class="rotate-img" alt="Photo 2">
+  <img src="/images/gallery/181076e795de0d15c882ecbbc969f57f.png" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" class="rotate-img" alt="Photo 2">
+
 collection: portfolio
 ---
