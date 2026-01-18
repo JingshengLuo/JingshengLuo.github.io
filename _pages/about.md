@@ -9,14 +9,30 @@ Hello! I am **Zhengqian Jin** 👋, a direct Ph.D. candidate.
 
 ### 🎓 Education
 
-* **B.S. in Applied Chemistry** 🧪
-  <img src="https://www.minmuslin.cn/logos/tongji-logo-light.png" height="40" style="vertical-align: middle; margin-right: 10px;"> Tongji University, Shanghai, China 🇨🇳
-  2019 – 2023
+<table style="border: none; table-layout: fixed; width: 100%;">
+  <tr>
+    <td style="width: 80px; vertical-align: middle; border: none; padding-right: 15px;">
+      <img src="https://www.minmuslin.cn/logos/tongji-logo-light.png" style="width: 60px; max-width: none;">
+    </td>
+    <td style="vertical-align: middle; border: none;">
+      <strong>B.S. in Applied Chemistry</strong> 🧪<br>
+      Tongji University, Shanghai, China 🇨🇳<br>
+      <span style="font-size: 0.85em; color: gray;">2019 – 2023</span>
+    </td>
+  </tr>
 
-* **Direct Ph.D. Candidate** 🔋
-  National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology
-  <img src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" height="40" style="vertical-align: middle; margin-right: 10px;"> Xi’an Jiaotong University (XJTU), Xi’an, China 🇨🇳
-  2023 – Present
+  <tr>
+    <td style="width: 80px; vertical-align: middle; border: none; padding-right: 15px;">
+      <img src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" style="width: 60px; max-width: none; border-radius: 4px;">
+    </td>
+    <td style="vertical-align: middle; border: none;">
+      <strong>Direct Ph.D. Candidate</strong> 🔋<br>
+      National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology<br>
+      Xi’an Jiaotong University (XJTU), Xi’an, China 🇨🇳<br>
+      <span style="font-size: 0.85em; color: gray;">2023 – Present</span>
+    </td>
+  </tr>
+</table>
 
   
 ### 📍 Current Position
