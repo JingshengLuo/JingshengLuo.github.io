@@ -8,14 +8,16 @@ title: "About Me"
 Hello! I am **Zhengqian Jin** 👋, a direct Ph.D. candidate.
 
 ### 🎓 Education
-- **B.S. in Applied Chemistry** 🧪  
-  Tongji University, Shanghai, China 🇨🇳  
+
+* **B.S. in Applied Chemistry** 🧪
+  <img src="https://www.minmuslin.cn/logos/tongji-logo-light.png" height="40" style="vertical-align: middle; margin-right: 10px;"> Tongji University, Shanghai, China 🇨🇳
   2019 – 2023
 
-- **Direct Ph.D. Candidate** 🔋  
-  National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology  
-  Xi'an Jiaotong University (XJTU), Xi'an, China 🇨🇳  
+* **Direct Ph.D. Candidate** 🔋
+  National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology
+  <img src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" height="40" style="vertical-align: middle; margin-right: 10px;"> Xi’an Jiaotong University (XJTU), Xi’an, China 🇨🇳
   2023 – Present
+
   
 ### 📍 Current Position
 - I work under the guidance of [Prof. Kai Xi](https://x-group-site.webflow.io/) & [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj) at the National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology.
