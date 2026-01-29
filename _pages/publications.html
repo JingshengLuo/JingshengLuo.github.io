@@ -5,6 +5,31 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.pub-thumbnail {
+  width: 100%;
+  object-fit: cover;
+  /* 柔和的圆角 */
+  border-radius: 8px;
+  /* 极淡的边框，在白底上界定轮廓 */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* 核心：高级感的多层柔和阴影 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  /* 平滑过渡动画 */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 鼠标悬停时的效果 */
+.pub-thumbnail:hover {
+  /* 图片轻微上浮 */
+  transform: translateY(-3px);
+  /* 阴影加深并扩散，营造悬浮感 */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  /* 边框稍微加深 */
+  border-color: rgba(0, 0, 0, 0.1);
+}
+</style>
+
 <p>‡ indicates equal contribution, @ indicates corresponding author </p>
 
 {% if site.author.googlescholar %}
@@ -30,7 +55,7 @@ author_profile: true
     
     {% if teaser %}
       <div style="float: left; width: 25%; margin-right: 20px;">
-        <img src=
+        <img class="pub-thumbnail" src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
           {% elsif teaser contains "/images/" %}
@@ -38,7 +63,7 @@ author_profile: true
           {% else %}
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
-          alt="publication teaser" style="width: 100%; object-fit: cover; border-radius: 4px;">
+          alt="publication teaser">
       </div>
 
       <div style="float: left; width: 70%;">
