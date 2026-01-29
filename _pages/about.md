@@ -62,5 +62,12 @@ I also run a PaperBot on X (formerly Twitter) that automatically shares new rese
 </div>
 
 
+<a class="twitter-timeline" href="https://twitter.com/EKL_Batteries?ref_src=twsrc%5Etfw">Tweets by EKL_Batteries</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 2025 Battery Research Landscape: An Unofficial Report 📊<br>Moving beyond spreadsheets, we processed literature data from 2022-2025 to visualize the current state of battery research. 📍3 Key Observations:<a href="https://twitter.com/hashtag/BatteryResearch?src=hash&amp;ref_src=twsrc%5Etfw">#BatteryResearch</a> <a href="https://twitter.com/hashtag/LiMetal?src=hash&amp;ref_src=twsrc%5Etfw">#LiMetal</a> <a href="https://twitter.com/hashtag/SolidState?src=hash&amp;ref_src=twsrc%5Etfw">#SolidState</a> <a href="https://twitter.com/hashtag/ResearchTrends?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchTrends</a> <a href="https://twitter.com/hashtag/AcademicTwitter?src=hash&amp;ref_src=twsrc%5Etfw">#AcademicTwitter</a> <a href="https://t.co/p0Xf5z1wXg">pic.twitter.com/p0Xf5z1wXg</a></p>&mdash; 🔋EKL Battery Papers (@EKL_Batteries) <a href="https://twitter.com/EKL_Batteries/status/2012787177030377924?ref_src=twsrc%5Etfw">January 18, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 ### 📬 Contact
 - Email: omwtbarca@gmail.com
