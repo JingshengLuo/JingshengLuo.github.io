@@ -56,8 +56,10 @@ My research focuses on **lithium metal batteries**, and I am particularly intere
 I also run a PaperBot on X (formerly Twitter) that automatically shares new research in the battery field. You can follow it here:
 **@EKL_Batteries** → 🔗 https://x.com/EKL_Batteries
 
-<a class="twitter-timeline" data-height="600" href="https://twitter.com/EKL_Batteries?ref_src=twsrc%5Etfw">Tweets by EKL_Batteries</a> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div markdown="0">
+  <a class="twitter-timeline" data-height="600" href="https://twitter.com/EKL_Batteries?ref_src=twsrc%5Etfw">Tweets by EKL_Batteries</a> 
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 
 ### 📬 Contact
