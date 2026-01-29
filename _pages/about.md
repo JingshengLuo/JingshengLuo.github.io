@@ -75,81 +75,87 @@ I also run a PaperBot on X (formerly Twitter) that automatically shares new rese
 
 
 
-### 🎨Selected Visualizations
-
-
-A collection of inspiring scientific figures and data visualizations. These examples showcase elegant schematic designs, multi-scale mechanisms, performance comparisons, and trend analyses — reflecting my ongoing interest in creating clear, aesthetically pleasing plots to communicate complex battery research concepts (such as SEI evolution, lithium plating dynamics, and multi-physics modeling).  
-All images are credited to their original sources.
 
 
 <style>
   .gallery {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;     /* 改成垂直排列（单列） */
+    align-items: center;        /* 水平居中 */
+    gap: 40px;                  /* 图片之间的垂直间距，拉大一点更舒服 */
     margin: 40px 0;
+    max-width: 800px;           /* 可选：限制整体最大宽度，避免超宽屏幕太拉伸 */
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .gallery-item {
-    flex: 1 1 300px;          /* 最小宽度300px，自动适应 */
-    max-width: 400px;
+    width: 100%;                /* 占满容器宽度 */
+    max-width: 700px;           /* 统一最大宽度（你可调成 600px / 800px，根据喜好） */
     text-align: center;
     transition: all 0.3s ease;
   }
+
   .gallery-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;             /* 避免底部小间隙 */
   }
+
   .gallery-item:hover img {
-    transform: translateY(-8px) scale(1.1);  /* 浮起 + 放大 */
-    box-shadow: 0 12px 28px rgba(0,0,0,0.25); /* 阴影加深 */
-    z-index: 10;  /* 确保浮在其他元素上方 */
+    transform: translateY(-8px) scale(1.08);  /* 稍微调小放大比例，避免太夸张 */
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    z-index: 10;
   }
+
   .gallery-item figcaption {
     margin-top: 12px;
     font-size: 0.95em;
     color: #555;
     line-height: 1.4;
+    max-width: 700px;           /* 和图片宽度对齐 */
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
 
 <section id="visualizations-gallery">
-  <h2>Visualizations Gallery</h2>
-  <p>A curated selection of high-quality figures from recent open-access literature on high-entropy layered hydroxides (HELHs). These schematics and data visualizations highlight performance comparisons, synthesis strategies, catalytic mechanisms, and future outlooks — inspiring aesthetic plotting in battery and materials research.</p>
+  <h2>🎨Selected Visualizations</h2>
+  <p>A collection of inspiring scientific figures and data visualizations. These examples showcase elegant schematic designs, multi-scale mechanisms, performance comparisons, and trend analyses — reflecting my ongoing interest in creating clear, aesthetically pleasing plots to communicate complex battery research concepts.  All images are credited to their original sources.</p>
 
   <div class="gallery">
 
     <figure class="gallery-item">
       <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig1_HTML.png" alt="Fig. 1: Comparative performance of LDHs vs HELHs">
-      <figcaption><strong>Fig. 1</strong> — Radar charts and summary table comparing traditional LDHs and high-entropy HELHs across thermodynamic stability, electrochemical activity, tunability, and more. HELHs show superior overall performance with balanced trade-offs. (Nano-Micro Lett. 2025, OA)</figcaption>
+      <figcaption><strong>Fig. 1</strong> — Radar charts and summary table comparing traditional LDHs and high-entropy HELHs across thermodynamic stability, electrochemical activity, tunability, and more. HELHs show superior overall performance with balanced trade-offs. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
     </figure>
 
     <figure class="gallery-item">
       <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig2_HTML.jpg" alt="Fig. 2: Evolution scheme of HELHs with ML optimization">
-      <figcaption><strong>Fig. 2</strong> — Schematic evolution of HELHs, illustrating machine learning-driven element selection for enhanced catalytic performance in energy conversion/storage. (Nano-Micro Lett. 2025, OA)</figcaption>
+      <figcaption><strong>Fig. 2</strong> — Schematic evolution of HELHs, illustrating machine learning-driven element selection for enhanced catalytic performance in energy conversion/storage. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
     </figure>
 
     <figure class="gallery-item">
       <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig7_HTML.png" alt="Fig. 7: OER activity bubble chart and element frequency">
-      <figcaption><strong>Fig. 7</strong> — (a) Bubble chart of OER activity for various HELHs (size by current density); (b) Frequency of metal elements in HELHs catalysts, with word cloud inset. Highlights common compositions driving performance. (Nano-Micro Lett. 2025, OA)</figcaption>
+      <figcaption><strong>Fig. 7</strong> — (a) Bubble chart of OER activity for various HELHs (size by current density); (b) Frequency of metal elements in HELHs catalysts, with word cloud inset. Highlights common compositions driving performance. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
     </figure>
 
     <figure class="gallery-item">
       <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig12_HTML.jpg" alt="Fig. 12: Synergistic catalysis and biomedical applications">
-      <figcaption><strong>Fig. 12</strong> — Synergistic catalysis mechanisms in HELHs nanozymes for ROS generation via multi-metal sites, plus outlook on biomedical uses (antimicrobial, biosensors, drug delivery). (Nano-Micro Lett. 2025, OA)</figcaption>
+      <figcaption><strong>Fig. 12</strong> — Synergistic catalysis mechanisms in HELHs nanozymes for ROS generation via multi-metal sites, plus outlook on biomedical uses (antimicrobial, biosensors, drug delivery). (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
     </figure>
 
     <figure class="gallery-item">
       <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig13_HTML.jpg" alt="Fig. 13: Future outlook of HELHs research">
-      <figcaption><strong>Fig. 13</strong> — Future research strategies for HELHs: synthetic control, operando characterization, multiphysics integration, DFT/ML screening, and interdisciplinary expansion in energy, environment, and biomedicine. (Nano-Micro Lett. 2025, OA)</figcaption>
+      <figcaption><strong>Fig. 13</strong> — Future research strategies for HELHs: synthetic control, operando characterization, multiphysics integration, DFT/ML screening, and interdisciplinary expansion in energy, environment, and biomedicine. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
     </figure>
 
   </div>
 
   <p style="text-align:center; font-size:0.9em; color:#777; margin-top:30px;">
-    Images sourced from open-access article: <a href="https://doi.org/10.1007/s40820-025-02023-5" target="_blank">High-Entropy Layered Hydroxides (Nano-Micro Lett. 2025)</a>. Visuals like these motivate my work on aesthetic scientific plotting for lithium metal battery mechanisms.
+    All images credited to their original publications.
   </p>
 </section>
