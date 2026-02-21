@@ -56,6 +56,10 @@ My research focuses on **lithium metal batteries**, and I am particularly intere
 - ⚽ Football, 🥊 UFC Boxing, 🏈 NFL
 - 🏃 Long-distance running (half-marathon runner)
 
+### My gadget
+[→ View all utilities ](/toolkit/)
+
+
 ### 🤖 Side Project
 I also run a PaperBot on X (formerly Twitter) that automatically shares new research in the battery field. You can follow it here:
 **@EKL_Batteries** → 🔗 https://x.com/EKL_Batteries
