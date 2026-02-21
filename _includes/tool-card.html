@@ -1,0 +1,18 @@
+{% assign title = include.title %}
+{% assign desc = include.desc %}
+{% assign url = include.url %}
+{% assign image = include.image %}
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="archive__item-teaser">
+      {% if image %}
+        <img src="{{ image | relative_url }}" alt="{{ title }}">
+      {% endif %}
+    </div>
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ url }}" target="_blank" rel="noopener">{{ title }}</a>
+    </h2>
+    <p class="archive__item-excerpt" itemprop="description">{{ desc }}</p>
+  </article>
+</div>
