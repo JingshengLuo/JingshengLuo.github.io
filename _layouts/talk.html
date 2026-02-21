@@ -1,78 +1,85 @@
 ---
-layout: default
+layout: archive
+title: "My Toolkit"
+permalink: /toolkit/
+author_profile: true
 ---
 
-{% include base_path %}
+<style>
+  .toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
+  .tool-card {
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
+  .tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    border-color: #494E52;
+  }
 
-<div id="main" role="main">
-  {% include sidebar.html %}
+  .tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+  .tool-card h3 {
+    margin: 0 0 0.5rem 0 !important;
+    color: #222;
+    font-size: 1.25rem;
+  }
 
-    <div class="page__inner-wrap">
-      {% unless page.header.overlay_color or page.header.overlay_image %}
-        <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-          {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+  .tool-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+</style>
 
-        </header>
-      {% endunless %}
+<div class="toolkit-grid">
 
-      <section class="page__content" itemprop="text">
-        {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+  <a href="https://omwtbarca.github.io/Image-Editor-Turn-Your-Photo-to-3D-Deluxe-/indexenDeluxe.html" class="tool-card" target="_blank">
+    <div class="tool-icon">🖼️</div>
+    <h3>3D Photo Deluxe</h3>
+    <p>Advanced image editor designed to transform 2D photos into immersive 3D-depth visual experiences.</p>
+  </a>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
+  <a href="https://omwtbarca.github.io/Image-Editor-Turn-Your-Photo-to-3D-Deluxe-/" class="tool-card" target="_blank">
+    <div class="tool-icon">🎨</div>
+    <h3>Image Editor 3D</h3>
+    <p>A streamlined utility for quick photo-to-3D conversions and basic image manipulation.</p>
+  </a>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+  <a href="https://omwtbarca.github.io/Mult-PDF-Splitter-MergerPro-/" class="tool-card" target="_blank">
+    <div class="tool-icon">📄</div>
+    <h3>PDF Splitter & Merger Pro</h3>
+    <p>Professional document tool for merging multiple PDFs or splitting large files with high efficiency.</p>
+  </a>
 
-      {% include post_pagination.html %}
-    </div>
+  <a href="https://omwtbarca.github.io/DEI8TIMELINE/" class="tool-card" target="_blank">
+    <div class="tool-icon">⏳</div>
+    <h3>DEI Timeline</h3>
+    <p>Interactive timeline visualization tool for tracking project milestones and historical data.</p>
+  </a>
 
-    {% if site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
-  </article>
+  <a href="https://omwtbarca.github.io/Productivity-Hub/" class="tool-card" target="_blank">
+    <div class="tool-icon">🚀</div>
+    <h3>Productivity Hub</h3>
+    <p>A centralized dashboard featuring essential widgets and tools to optimize your daily workflow.</p>
+  </a>
 
-  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
-    <div class="page__related">
-      {% if site.data.ui-text[site.locale].related_label %}
-        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
-      {% endif %}
-      <div class="grid__wrapper">
-        {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
 </div>
