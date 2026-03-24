@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Images from Internet
 permalink: /images/
 ---
