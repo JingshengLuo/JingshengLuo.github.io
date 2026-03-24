@@ -65,7 +65,7 @@
   transition: background 0.2s;
 
   &:hover {
-    background: darken(var(--global-theme-color), 10%);
+      filter: brightness(0.9); /* 将亮度降低 10%，效果等同于 darken 10% */
   }
 }
 
