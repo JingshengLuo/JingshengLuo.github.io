@@ -5,7 +5,7 @@ author_profile: true
 title: "About Me"
 ---
 
-Hello! I am **Zhengqian Jin** 👋, a direct Ph.D. candidate.
+Hello! I am **Zhengqian Jin** 👋, a Ph.D. candidate.
 
 ### 📬 Contact
 - Email: omwtbarca@gmail.com
@@ -30,7 +30,7 @@ Hello! I am **Zhengqian Jin** 👋, a direct Ph.D. candidate.
       <img src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" style="width: 60px; max-width: none; border-radius: 4px;">
     </td>
     <td style="vertical-align: middle; border: none;">
-      <strong>Direct Ph.D. Candidate</strong> 🔋<br>
+      <strong> Ph.D. Candidate</strong> 🔋<br>
       National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology<br>
       Xi’an Jiaotong University (XJTU), Xi’an, China 🇨🇳<br>
       <span style="font-size: 0.85em; color: gray;">2023 – Present</span>
@@ -54,7 +54,7 @@ My research focuses on **lithium metal batteries**, and I am particularly intere
 - 🎨 Scientific visualization and aesthetic plots
 - 🇪🇸 Learning Spanish
 - ⚽ Football, 🥊 UFC Boxing, 🏈 NFL
-- 🏃 Long-distance running (half-marathon runner)
+- 🏃 Long-distance running 
 
 ### My gadget
 [→ View all utilities ](/toolkit/)
