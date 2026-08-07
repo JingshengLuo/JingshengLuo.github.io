@@ -13,6 +13,7 @@ prose: false
 {% endif %}
 
 {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% assign total_pubs = sorted_pubs | size %}
 
 <div class="pub-list">
 {% for post in sorted_pubs %}
@@ -25,18 +26,21 @@ prose: false
     {% assign teaser = nil %}
   {% endif %}
 
+  {% comment %} earliest paper is 1, newest is {{ total_pubs }} {% endcomment %}
+  {% assign pub_number = total_pubs | minus: forloop.index0 %}
+
   <article class="pub{% unless teaser %} pub--no-thumb{% endunless %}">
 
     {% if teaser %}
-      <a href="{{ post.permalink | relative_url }}" tabindex="-1" aria-hidden="true">
-        <img class="pub__thumb" loading="lazy"
-             src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | prepend: base_path }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
-             alt="">
-      </a>
+      {% capture teaser_src %}{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | prepend: base_path }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}{% endcapture %}
+      <img class="pub__thumb zoomable" loading="lazy"
+           src="{{ teaser_src }}"
+           alt="Graphical abstract — {{ post.title | strip_html | escape }}"
+           data-caption="{{ pub_number }} · {{ post.title | strip_html | escape }}">
     {% endif %}
 
     <div>
-      <span class="pub__year">{{ post.date | date: "%Y" }}{% if post.status %} · {{ post.status }}{% endif %}</span>
+      <span class="pub__year"><span class="pub__index">{{ pub_number }}</span>{{ post.date | date: "%Y" }}{% if post.status and post.status != 'Preprint' %} · {{ post.status }}{% endif %}</span>
 
       <h2 class="pub__title">
         <a href="{{ post.permalink | relative_url }}">{{ post.title }}</a>

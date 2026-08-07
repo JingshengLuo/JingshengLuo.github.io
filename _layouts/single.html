@@ -19,7 +19,7 @@ layout: default
 
       {% if page.date or page.venue or page.status or page.read_time %}
         <div class="article-header__meta">
-          {% if page.status %}<span class="badge">{{ page.status }}</span>{% endif %}
+          {% if page.status and page.status != 'Preprint' %}<span class="badge">{{ page.status }}</span>{% endif %}
           {% if page.date %}
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
           {% endif %}

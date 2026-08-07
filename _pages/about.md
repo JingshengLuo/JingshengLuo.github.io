@@ -9,7 +9,6 @@ description: "Zhengqian Jin — Ph.D. candidate in energy storage at Xi'an Jiaot
 <header class="hero">
   <img class="hero__avatar" src="/images/profile.jpg" alt="Zhengqian Jin">
   <h1 class="hero__name">Zhengqian Jin</h1>
-  <p class="hero__role">Ph.D. Candidate · Energy Storage · Xi&rsquo;an Jiaotong University</p>
   <p class="hero__motto">&ldquo;We have the first snowflake. Now let&rsquo;s build a blizzard.&rdquo;</p>
   <nav class="hero__links" aria-label="Profile links">
     <a class="chip" href="mailto:omwtbarca@gmail.com">Email</a>
@@ -23,6 +22,39 @@ description: "Zhengqian Jin — Ph.D. candidate in energy storage at Xi'an Jiaot
 I work on **lithium metal batteries** — how lithium plates and strips, what the interphase does while it happens, and how much of that behaviour we can actually read off the data we already collect. Structure design, catalysis, and mechanism sit at the centre of it; a fair amount of Python sits underneath.
 
 A second, quieter thread runs alongside the electrochemistry: how research itself is organised. Literature triage, metadata, reproducible figures, and the small pieces of infrastructure that decide whether a result survives contact with the next person who reads it.
+
+## Beyond the Lab
+
+Scientific visualisation and figure design. Spanish, slowly. Football, boxing, and the NFL, mostly as a spectator. Long-distance running, mostly not.
+
+## Education &amp; Position
+
+<div class="entry-list" markdown="0">
+
+  <div class="entry entry--dated entry--crest">
+    <img class="entry__crest" src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" alt="Xi'an Jiaotong University" loading="lazy">
+    <div>
+      <p class="entry__title">Ph.D. Candidate, Electronic Science &amp; Technology</p>
+      <p class="entry__meta">
+        Xi&rsquo;an Jiaotong University, Xi&rsquo;an, China<br>
+        National Innovation Platform (Center) for Industry–Education Integration of Energy Storage Technology
+      </p>
+    </div>
+    <p class="entry__date">2023 — present</p>
+  </div>
+
+  <div class="entry entry--dated entry--crest">
+    <img class="entry__crest" src="https://www.minmuslin.cn/logos/tongji-logo-light.png" alt="Tongji University" loading="lazy">
+    <div>
+      <p class="entry__title">B.S. in Applied Chemistry</p>
+      <p class="entry__meta">Tongji University, Shanghai, China</p>
+    </div>
+    <p class="entry__date">2019 — 2023</p>
+  </div>
+
+</div>
+
+Advised by [Prof. Kai Xi](https://x-group-site.webflow.io/) and [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj).
 
 ## Research
 
@@ -45,121 +77,102 @@ A second, quieter thread runs alongside the electrochemistry: how research itsel
   </div>
 </div>
 
-## Education &amp; Position
-
-<div class="entry-list" markdown="0">
-
-  <div class="entry entry--dated">
-    <div>
-      <p class="entry__title">Ph.D. Candidate, Electronic Science &amp; Technology</p>
-      <p class="entry__meta">
-        Xi&rsquo;an Jiaotong University, Xi&rsquo;an, China<br>
-        National Innovation Platform (Center) for Industry–Education Integration of Energy Storage Technology
-      </p>
-    </div>
-    <p class="entry__date">2023 — present</p>
-  </div>
-
-  <div class="entry entry--dated">
-    <div>
-      <p class="entry__title">B.S. in Applied Chemistry</p>
-      <p class="entry__meta">Tongji University, Shanghai, China</p>
-    </div>
-    <p class="entry__date">2019 — 2023</p>
-  </div>
-
-</div>
-
-Advised by [Prof. Kai Xi](https://x-group-site.webflow.io/) and [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj).
-
 ## Selected Visualisations
 
-A short set of figures from recent work. Scientific visualisation is a standing interest of mine — these are the ones I keep coming back to.
+A short set of figures from recent work, newest first. Scientific visualisation is a standing interest of mine — these are the ones I keep coming back to. Click any figure to enlarge it.
 
 <div class="gallery" markdown="0">
 
   <figure>
-    <a href="https://doi.org/10.1002/adma.74260">
-      <img src="/images/viz-adma-74260.jpg" alt="Graphical abstract: intramolecular polarization–mediated solvation for low-temperature high-voltage lithium metal batteries" style="max-width:520px;margin-inline:auto;">
-    </a>
+    <img class="zoomable" src="/images/viz-adma-74260.jpg" alt="Graphical abstract: intramolecular polarization–mediated solvation for low-temperature high-voltage lithium metal batteries" loading="lazy">
     <figcaption>
       Intramolecular polarisation reshapes the solvation shell so that Li<sup>+</sup> desolvates readily at &minus;30&nbsp;°C while the NCM811 surface stays intact to 4.9&nbsp;V — the weakly-solvated structure on the lower panel is the whole argument in one frame.
-      <span class="src">Cao, Jin, Li et&nbsp;al., <i>Advanced Materials</i> (2026) 74260</span>
+      <span class="src"><a href="https://doi.org/10.1002/adma.74260">Cao, Jin, Li et&nbsp;al., <i>Advanced Materials</i> (2026) 74260</a></span>
     </figcaption>
   </figure>
 
   <figure>
-    <a href="https://doi.org/10.1002/adma.73517">
-      <img src="/images/viz-adma-73517.jpg" alt="Graphical abstract: electron-pinned interface engineering with gradient-ordered catalytic microzones for lithium–sulfur batteries" style="max-width:480px;margin-inline:auto;">
-    </a>
-    <figcaption>
-      Three catalytic microzones ordered by electron donation, Φ1 to Φ3, carrying the polysulfide through liquid–solid and then solid–solid conversion. The slow step of the Li–S cascade, usually drawn as a single arrow, gets three.
-      <span class="src">L. Jin, Z. Jin, T. Deng et&nbsp;al., <i>Advanced Materials</i> (2026) e73517</span>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <a href="https://doi.org/10.1016/j.matt.2026.102777">
-      <img src="/images/viz-matter-102777.jpg" alt="Three-stage framework for digital research: collecting literature, processing information, integrating notes">
-    </a>
+    <img class="zoomable" src="/images/viz-matter-102777.jpg" alt="Three-stage framework for digital research: collecting literature, processing information, integrating notes" loading="lazy">
     <figcaption>
       Collecting, processing, integrating — the three-stage framework for digital research. Drawing the workflow out in full turned out to be the fastest way to find the places where it leaks.
-      <span class="src">Z. Jin &amp; K. Xi, <i>Matter</i> 9 (2026) 102777</span>
+      <span class="src"><a href="https://doi.org/10.1016/j.matt.2026.102777">Z. Jin &amp; K. Xi, <i>Matter</i> 9 (2026) 102777</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="/images/viz-adma-73517.jpg" alt="Graphical abstract: electron-pinned interface engineering with gradient-ordered catalytic microzones for lithium–sulfur batteries" loading="lazy">
+    <figcaption>
+      Three catalytic microzones ordered by electron donation, Φ1 to Φ3, carrying the polysulfide through liquid–solid and then solid–solid conversion. The slow step of the Li–S cascade, usually drawn as a single arrow, gets three.
+      <span class="src"><a href="https://doi.org/10.1002/adma.73517">L. Jin, Z. Jin, T. Deng et&nbsp;al., <i>Advanced Materials</i> (2026) e73517</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig1_HTML.png" alt="Comparative performance of layered double hydroxides against high-entropy layered hydroxides" loading="lazy">
+    <figcaption>
+      Conventional layered double hydroxides against their high-entropy counterparts, side by side. Configurational entropy buys stability without giving up the tunability that made LDHs interesting in the first place.
+      <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 1</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig2_HTML.jpg" alt="Evolution scheme of high-entropy layered hydroxides with machine-learning optimisation" loading="lazy">
+    <figcaption>
+      How the composition space gets searched. The machine-learning loop on the right is doing what a decade of one-element-at-a-time substitution did on the left, which is the point of the figure.
+      <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 2</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig7_HTML.png" alt="OER activity bubble chart and element frequency across high-entropy layered hydroxides" loading="lazy">
+    <figcaption>
+      Every reported OER overpotential in one bubble field, with element frequency underneath. Two plots that answer &ldquo;what has actually been tried, and did it work?&rdquo; without a table.
+      <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 7</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig12_HTML.jpg" alt="Synergistic catalysis and biomedical applications of high-entropy layered hydroxides" loading="lazy">
+    <figcaption>
+      The synergy argument, extended past electrocatalysis into biomedicine. Same material class, very different failure criteria — worth drawing on one canvas.
+      <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 12</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="zoomable" src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig13_HTML.jpg" alt="Future outlook for high-entropy layered hydroxide research" loading="lazy">
+    <figcaption>
+      The outlook panel. Review figures like this usually age badly; this one was drawn to be falsifiable, which is a different design brief.
+      <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 13</a></span>
     </figcaption>
   </figure>
 
 </div>
 
-## Reading Surface
+## Published In
 
-The journals below are what [@EKL_Batteries](https://x.com/EKL_Batteries) watches — a PaperBot I run that pulls new battery and materials papers off RSS, filters them in Python, and posts what survives. It is also, roughly, my own reading surface.
+Where the work has appeared so far — mark size roughly tracks how much of it landed there.
 
-<div class="journal-wall" markdown="0">
-  <span class="jw-l jw-sans">Nature Medicine</span>
-  <span class="jw-m jw-light">Nature Electronics</span>
-  <span class="jw-m">Nature Synthesis</span>
-  <span class="jw-l jw-caps">Nature Reviews Materials</span>
-  <span class="jw-s jw-light">Nature Reviews Endocrinology</span>
-  <span class="jw-xl jw-sans">Nature Communications</span>
-  <span class="jw-l jw-italic">Science Advances</span>
-  <span class="jw-xl jw-caps jw-sky">Advanced Materials</span>
-  <span class="jw-l jw-caps">Advanced Energy Materials</span>
-  <span class="jw-m jw-caps">Advanced Functional Materials</span>
-  <span class="jw-m jw-caps">Advanced Science</span>
-  <span class="jw-xl">Chemical Reviews</span>
-  <span class="jw-l jw-sans">ACS Nano</span>
-  <span class="jw-m jw-light">Nano Letters</span>
-  <span class="jw-l jw-sans">Small</span>
-  <span class="jw-s jw-sans">Small Methods</span>
-  <span class="jw-l jw-italic">Materials Today</span>
-  <span class="jw-l jw-sky">Nano-Micro Letters</span>
-  <span class="jw-m jw-caps">Carbon Energy</span>
-  <span class="jw-s jw-light">Analytical Chemistry</span>
-  <span class="jw-m jw-light">Nano Today</span>
-  <span class="jw-m jw-italic">Research</span>
-  <span class="jw-xs">TrAC Trends in Analytical Chemistry</span>
-  <span class="jw-l jw-sans">Chemical Engineering Journal</span>
-  <span class="jw-m">Chemical Science</span>
-  <span class="jw-m jw-light">Green Chemistry</span>
-  <span class="jw-s jw-sans">ChemComm</span>
-  <span class="jw-m jw-caps">SusMat</span>
-  <span class="jw-xs">Biosensors &amp; Bioelectronics</span>
-  <span class="jw-s jw-sans">ACS Sensors</span>
-  <span class="jw-xl jw-sky jw-caps">Energy Storage Materials</span>
-  <span class="jw-xs">ACS Applied Materials &amp; Interfaces</span>
-  <span class="jw-s jw-light">Polymer Chemistry</span>
-  <span class="jw-m jw-caps">Water Research</span>
-  <span class="jw-s">Journal of Materials Chemistry</span>
-  <span class="jw-xs jw-light">Advanced Drug Delivery Reviews</span>
-  <span class="jw-l">Carbon</span>
-  <span class="jw-xs">Macromolecular Rapid Communications</span>
-  <p class="journal-wall__note">Watchlist · @EKL_Batteries</p>
+<div class="journal-wall journal-wall--logos" markdown="0">
+  {%- assign wall = site.data.journals | sort: 'weight' | reverse -%}
+  {%- for j in wall -%}
+    {%- if j.logo -%}
+      <a class="jw-logo jw-w{{ j.weight }}" href="{{ j.url }}" title="{{ j.name }} · {{ j.papers }} paper{% if j.papers > 1 %}s{% endif %}">
+        <img src="{{ j.logo }}" alt="{{ j.name }}" loading="lazy"
+             data-fallback="{{ j.short | escape }}"
+             data-count="{{ j.papers }}">
+      </a>
+    {%- else -%}
+      <a class="jw-word jw-w{{ j.weight }}" href="{{ j.url }}" title="{{ j.name }} · {{ j.papers }} paper{% if j.papers > 1 %}s{% endif %}">
+        {{ j.short }}<span class="jw-count">×{{ j.papers }}</span>
+      </a>
+    {%- endif -%}
+  {%- endfor -%}
+  <p class="journal-wall__note">Full list on the <a href="/publications/">Publications</a> page</p>
 </div>
+
+Alongside the papers I run [@EKL_Batteries](https://x.com/EKL_Batteries), a PaperBot that pulls new battery and materials work off RSS, filters it in Python, and posts what survives. It is also, roughly, my own reading surface.
 
 ## Tools
 
 I build small utilities when a workflow annoys me twice. They live on the [Toolkit](/toolkit/) page — a Markdown-native publishing helper, a few plotting and literature-processing scripts, and whatever else has proved worth keeping.
-
-## Beyond the Lab
-
-Scientific visualisation and figure design. Spanish, slowly. Football, boxing, and the NFL, mostly as a spectator. Long-distance running, mostly not.

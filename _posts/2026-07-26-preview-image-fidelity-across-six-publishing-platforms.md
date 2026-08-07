@@ -15,7 +15,6 @@ tags:
   - Scholarly communication
   - Metadata
   - Open Graph
-  - Preprint
 ---
 
 <p class="affiliation" markdown="0">

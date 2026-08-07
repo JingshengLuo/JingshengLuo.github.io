@@ -15,4 +15,87 @@
     await mermaid.run({ querySelector: 'code.language-mermaid' });
 </script>
 
+<!-- Lightbox: click any .zoomable figure to enlarge, Esc or the close button to exit -->
+<script>
+(function () {
+  var box, img, cap, lastFocus;
+
+  function build() {
+    box = document.createElement('div');
+    box.className = 'lightbox';
+    box.setAttribute('role', 'dialog');
+    box.setAttribute('aria-modal', 'true');
+    box.setAttribute('aria-label', 'Enlarged figure');
+    box.innerHTML =
+      '<button class="lightbox__close" type="button" aria-label="Close">✕</button>' +
+      '<img class="lightbox__img" alt="">' +
+      '<p class="lightbox__cap"></p>';
+    document.body.appendChild(box);
+    img = box.querySelector('.lightbox__img');
+    cap = box.querySelector('.lightbox__cap');
+    box.addEventListener('click', function (e) {
+      if (e.target === box || e.target.closest('.lightbox__close')) close();
+    });
+  }
+
+  function open(src, alt, caption) {
+    if (!box) build();
+    lastFocus = document.activeElement;
+    img.src = src;
+    img.alt = alt || '';
+    cap.textContent = caption || '';
+    box.dataset.open = 'true';
+    document.body.style.overflow = 'hidden';
+    box.querySelector('.lightbox__close').focus();
+  }
+
+  function close() {
+    if (!box) return;
+    box.dataset.open = 'false';
+    document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('.zoomable');
+    if (!t || t.closest('a')) return;
+    e.preventDefault();
+    var caption = t.dataset.caption;
+    if (!caption) {
+      var fig = t.closest('figure');
+      var fc = fig && fig.querySelector('figcaption');
+      caption = fc ? fc.textContent.trim().replace(/\s+/g, ' ') : '';
+    }
+    open(t.currentSrc || t.src, t.alt, caption);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+
+  /* Journal marks are hotlinked from publishers. If one ever 404s or the
+     publisher starts blocking referrers, swap that card for its wordmark
+     rather than showing a broken image. */
+  document.addEventListener('error', function (e) {
+    var el = e.target;
+    if (!(el instanceof HTMLImageElement) || !el.dataset.fallback) return;
+    var a = el.closest('.jw-logo');
+    if (!a) return;
+    a.className = a.className.replace('jw-logo', 'jw-word');
+    a.textContent = el.dataset.fallback;
+    if (el.dataset.count) {
+      var s = document.createElement('span');
+      s.className = 'jw-count';
+      s.textContent = '×' + el.dataset.count;
+      a.appendChild(s);
+    }
+  }, true);
+})();
+</script>
+
+<!-- Visitor map: counts quietly, renders nothing. Stats live in the dashboard. -->
+<div id="visitor-counter" hidden aria-hidden="true" style="display:none">
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=356379&w=a&t=tt&d=a_dIcJItb0orS1llLx_VqVh-XtN1CdWN6BBX_0DOCuE&co=94acbe&cmo=d0aa69&cmn=3aa5cc&ct=1d4b53"></script>
+</div>
+
 <!-- end custom footer snippets -->

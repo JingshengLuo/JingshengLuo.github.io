@@ -117,7 +117,7 @@
   --accent-wash:   #DEEAF3;   /* tinted fill                                */
 
   /* Newspaper grain */
-  --grain-opacity: .5;
+  --grain-opacity: .95;
 
   /* Type */
   --font-serif:  "Newsreader", "Iowan Old Style", "Source Serif 4", Georgia, "Songti SC", serif;
@@ -126,8 +126,8 @@
   --font-mono:   "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   /* Measure */
-  --measure:       46rem;   /* ~736px — prose column */
-  --measure-wide:  60rem;   /* ~960px — galleries, card grids */
+  --measure:       47.5rem; /* 760px — prose column; figures match it exactly */
+  --measure-wide:  60rem;   /* ~960px — masthead and the journal wall only */
   --gutter:        1.5rem;
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -150,7 +150,7 @@
   --accent-strong: #B7DAF4;
   --accent-wash:   #1E2C36;
 
-  --grain-opacity: .28;
+  --grain-opacity: .55;
 }
 
 /* --------------------------------------------------------------------------
@@ -664,8 +664,8 @@ figcaption {
 
 .pub {
   display: grid;
-  grid-template-columns: 132px 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 210px 1fr;
+  gap: 1.75rem;
   padding-block: 2rem;
   border-bottom: 1px solid var(--rule);
   align-items: start;
@@ -678,13 +678,36 @@ figcaption {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
-  padding: 3px;
-  background: var(--bg-raised);
+  padding: 6px;
+  background: #fff;
   border: 1px solid var(--rule);
-  border-radius: 2px;
-  transition: border-color .25s var(--ease), opacity .25s var(--ease);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 6px 16px -10px rgba(0,0,0,.35);
+  transition: border-color .25s var(--ease), box-shadow .25s var(--ease),
+              transform .25s var(--ease);
 }
-.pub:hover .pub__thumb { border-color: var(--rule-strong); opacity: .93; }
+[data-theme="dark"] .pub__thumb { background: #f3f1ee; }
+.pub:hover .pub__thumb {
+  border-color: var(--rule-strong);
+  box-shadow: 0 2px 4px rgba(0,0,0,.07), 0 14px 30px -14px rgba(0,0,0,.45);
+  transform: translateY(-2px);
+}
+
+.pub__index {
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .06em;
+  color: var(--ink-faint);
+}
+.pub__index::after {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1px;
+  background: var(--rule-strong);
+  vertical-align: .28em;
+  margin: 0 .1rem 0 .45rem;
+}
 
 .pub__year {
   font-family: var(--font-mono);
@@ -948,12 +971,10 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3.5rem;
   margin-block: 3rem;
-  /* break out of the prose column so wide figures are legible */
-  width: min(60rem, calc(100vw - 3rem));
-  margin-left: 50%;
-  transform: translateX(-50%);
+  /* figures sit flush with the prose column — one measure for the whole page */
+  width: 100%;
 }
 
 .gallery figure {
@@ -1220,7 +1241,7 @@ figcaption {
   body { font-size: 1rem; }
   .site-main { padding-block: 2.5rem 4rem; }
   .pub { grid-template-columns: 1fr; gap: 1rem; }
-  .pub__thumb { max-width: 15rem; aspect-ratio: 16 / 10; }
+  .pub__thumb { max-width: 18rem; aspect-ratio: 16 / 10; }
   .entry--dated { grid-template-columns: 1fr; }
   .entry--dated .entry__date { grid-column: 1; grid-row: auto; text-align: left; }
   .gallery { gap: 2.5rem; }
@@ -1246,4 +1267,200 @@ figcaption {
   body { background: #fff; color: #000; font-size: 11pt; }
   .wrap { max-width: none; padding: 0; }
   a { color: #000; text-decoration: underline; }
+}
+
+/* --------------------------------------------------------------------------
+   19. Lightbox — click a figure to enlarge, click again (or Esc) to close
+   -------------------------------------------------------------------------- */
+
+.zoomable { cursor: zoom-in; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: color-mix(in srgb, var(--bg-sunken) 92%, #000);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .22s var(--ease), visibility .22s var(--ease);
+}
+.lightbox[data-open="true"] { opacity: 1; visibility: visible; }
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 3px;
+  padding: 8px;
+  box-shadow: 0 24px 70px -20px rgba(0,0,0,.6);
+  transform: scale(.97);
+  transition: transform .22s var(--ease);
+}
+.lightbox[data-open="true"] .lightbox__img { transform: scale(1); }
+
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .2s var(--ease), color .2s var(--ease);
+}
+.lightbox__close:hover { background: var(--ink); color: var(--bg); }
+
+.lightbox__cap {
+  position: absolute;
+  left: 0; right: 0; bottom: 1.1rem;
+  margin-inline: auto;
+  max-width: 44rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .03em;
+  color: var(--ink-faint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lightbox, .lightbox__img { transition: none; }
+}
+
+/* --------------------------------------------------------------------------
+   20. Journal wall — official marks where they exist, wordmarks where not
+   -------------------------------------------------------------------------- */
+
+.journal-wall--logos {
+  align-items: center;
+  gap: 1.4rem 2.1rem;
+}
+
+.jw-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem .7rem;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease),
+              border-color .2s var(--ease);
+}
+.jw-logo img {
+  display: block;
+  height: var(--jw-h, 2.4rem);
+  width: auto;
+  max-width: 12rem;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: none;
+}
+.jw-logo:hover {
+  transform: translateY(-3px);
+  border-color: var(--rule-strong);
+  box-shadow: 0 10px 24px -12px rgba(0,0,0,.4);
+  text-decoration: none;
+}
+
+/* journals with no obtainable mark fall back to type, sized the same */
+.jw-word {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem .85rem;
+  min-height: var(--jw-h, 2.4rem);
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  font-family: var(--font-sans);
+  font-weight: 650;
+  font-size: .9rem;
+  letter-spacing: -0.015em;
+  color: #2a2724;
+  white-space: nowrap;
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease),
+              border-color .2s var(--ease);
+}
+.jw-word:hover {
+  transform: translateY(-3px);
+  border-color: var(--rule-strong);
+  box-shadow: 0 10px 24px -12px rgba(0,0,0,.4);
+  text-decoration: none;
+  color: #2a2724;
+}
+
+/* papers-published weighting — more papers, bigger mark */
+.jw-w3 { --jw-h: 3.1rem; font-size: 1.05rem; }
+.jw-w2 { --jw-h: 2.6rem; font-size: .95rem; }
+.jw-w1 { --jw-h: 2.1rem; font-size: .85rem; }
+
+.jw-count {
+  margin-left: .5rem;
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  font-weight: 400;
+  color: var(--ink-faint);
+  letter-spacing: .04em;
+}
+
+@media (max-width: 40rem) {
+  .journal-wall--logos { gap: 1rem 1.2rem; padding: 2rem .5rem 2.25rem; }
+  .jw-w3 { --jw-h: 2.3rem; font-size: .9rem; }
+  .jw-w2 { --jw-h: 2rem;   font-size: .82rem; }
+  .jw-w1 { --jw-h: 1.75rem; font-size: .76rem; }
+  .jw-logo img { max-width: 8.5rem; }
+}
+
+/* --------------------------------------------------------------------------
+   21. Education & Position — institution crests
+   -------------------------------------------------------------------------- */
+
+.entry--crest {
+  display: grid;
+  grid-template-columns: 58px 1fr auto;
+  gap: 1.1rem;
+  align-items: start;
+}
+.entry__crest {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border: 0;
+  background: none;
+  border-radius: 0;
+}
+@media (max-width: 40rem) {
+  .entry--crest { grid-template-columns: 44px 1fr; gap: .9rem; }
+  .entry--crest .entry__date { grid-column: 2; }
+  .entry__crest { width: 44px; height: 44px; }
+}
+
+/* Writing archive — closing note */
+.archive-tail {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: .9375rem;
+  color: var(--ink-faint);
+}
+
+/* Figures respond to the zoom affordance even without a wrapping link */
+.gallery img.zoomable { transition: border-color .3s var(--ease), transform .3s var(--ease); }
+.gallery img.zoomable:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+@media (max-width: 40rem) {
+  .pub__thumb { max-width: 18rem; }
 }

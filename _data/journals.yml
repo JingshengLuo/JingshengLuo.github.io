@@ -1,0 +1,84 @@
+# Journals where the work has appeared.
+#
+# `logo:` is optional. When present the mark is hotlinked from the publisher
+# (or Wikimedia Commons) and rendered as an image card; if that URL ever 404s
+# or the publisher adds referrer blocking, the card degrades to the wordmark
+# automatically — see the onerror handler in _includes/footer/custom.html.
+#
+# To use a self-hosted mark instead, drop the file into images/journals/ and
+# point `logo:` at it, e.g.  logo: /images/journals/adma.svg
+#
+# `weight` drives size in the wall: 3 = largest. Roughly tracks paper count.
+
+- name: Advanced Materials
+  short: Adv. Mater.
+  url: https://advanced.onlinelibrary.wiley.com/journal/15214095
+  papers: 2
+  weight: 3
+
+- name: Advanced Energy Materials
+  short: Adv. Energy Mater.
+  url: https://advanced.onlinelibrary.wiley.com/journal/16146840
+  papers: 2
+  weight: 3
+
+- name: Angewandte Chemie
+  short: Angew. Chem. Int. Ed.
+  url: https://onlinelibrary.wiley.com/journal/15213773
+  logo: https://upload.wikimedia.org/wikipedia/commons/1/1d/Logo_of_Angewandte_Chemie_International_Edition.svg
+  papers: 1
+  weight: 2
+
+- name: Matter
+  short: Matter
+  url: https://www.cell.com/matter/home
+  logo: https://ars.els-cdn.com/content/image/X25902385.jpg
+  papers: 1
+  weight: 2
+
+- name: Nano-Micro Letters
+  short: Nano-Micro Lett.
+  url: https://link.springer.com/journal/40820
+  logo: https://media.springernature.com/w316/springer-static/cover-hires/journal/40820.jpg
+  papers: 1
+  weight: 2
+
+- name: Nano Energy
+  short: Nano Energy
+  url: https://www.sciencedirect.com/journal/nano-energy
+  logo: https://ars.els-cdn.com/content/image/X22112855.jpg
+  papers: 1
+  weight: 2
+
+- name: Advanced Functional Materials
+  short: Adv. Funct. Mater.
+  url: https://advanced.onlinelibrary.wiley.com/journal/16163028
+  papers: 1
+  weight: 2
+
+- name: Journal of Energy Chemistry
+  short: J. Energy Chem.
+  url: https://www.sciencedirect.com/journal/journal-of-energy-chemistry
+  logo: https://ars.els-cdn.com/content/image/X20954956.jpg
+  papers: 1
+  weight: 1
+
+- name: Energy Materials
+  short: Energy Mater.
+  url: https://www.oaepublish.com/energymater
+  logo: https://i.oaes.cc/upload/journal_logo/em.jpg
+  papers: 1
+  weight: 1
+
+- name: Physical Chemistry Chemical Physics
+  short: PCCP
+  url: https://pubs.rsc.org/en/journals/journalissues/cp
+  logo: https://www.rsc.org/getContentAsset/cdbec9f9-b6de-431b-8d70-fea9b3f96b97/97c19dfb-06fc-4638-b657-b9d8300eab48/pccp-journal-cover.jpg?language=en
+  papers: 1
+  weight: 1
+
+- name: Chinese Journal of Chemical Physics
+  short: Chin. J. Chem. Phys.
+  url: https://pubs.aip.org/cps/cjcp
+  papers: 1
+  weight: 1
