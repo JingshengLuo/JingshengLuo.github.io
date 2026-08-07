@@ -140,8 +140,8 @@ atom_feed:
 # Google:  Search Console -> Add property -> URL prefix -> HTML tag.
 #          Paste ONLY the content="..." value below, not the whole <meta> tag.
 # Bing:    Bing Webmaster Tools -> Add site -> HTML Meta Tag. Same rule.
-google_site_verification :
-bing_site_verification   :
+google_site_verification : "hHbNLe6D57weqwaiWvrCO6EkHBP_YM8Ryb8qF6rcT8w"
+bing_site_verification   : "3045C2E0D0F5808CF0ED8976584CBC52"
 alexa_site_verification  :
 yandex_site_verification :
 
