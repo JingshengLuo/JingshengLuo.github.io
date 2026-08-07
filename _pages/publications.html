@@ -1,101 +1,64 @@
 ---
 layout: archive
 title: "Publications"
+lede: "Peer-reviewed work, newest first. ‡ equal contribution · @ corresponding author."
 permalink: /publications/
-author_profile: true
+prose: false
 ---
-
-<style>
-.pub-thumbnail {
-  width: 100%;
-  object-fit: cover;
-  /* 柔和的圆角 */
-  border-radius: 8px;
-  /* 极淡的边框，在白底上界定轮廓 */
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  /* 核心：高级感的多层柔和阴影 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  /* 平滑过渡动画 */
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-/* 鼠标悬停时的效果 */
-.pub-thumbnail:hover {
-  /* 图片轻微上浮 */
-  transform: translateY(-3px);
-  /* 阴影加深并扩散，营造悬浮感 */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  /* 边框稍微加深 */
-  border-color: rgba(0, 0, 0, 0.1);
-}
-</style>
-
-<p>‡ indicates equal contribution, @ indicates corresponding author </p>
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
+{% if site.author.googlescholar %}
+  <p class="pub-note">Also on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+{% endif %}
+
 {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
 
-<div class="publications">
+<div class="pub-list">
 {% for post in sorted_pubs %}
 
   {% if post.header.teaser %}
-    {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+    {% assign teaser = post.header.teaser %}
   {% elsif post.teaser %}
-    {% capture teaser %}{{ post.teaser }}{% endcapture %}
+    {% assign teaser = post.teaser %}
   {% else %}
     {% assign teaser = nil %}
   {% endif %}
-  
-  <div class="publication-item" style="margin-bottom: 2rem; border-bottom: 1px dashed #ccc; padding-bottom: 1.5rem; overflow: hidden;">
-    
-    {% if teaser %}
-      <div style="float: left; width: 25%; margin-right: 20px;">
-        <img class="pub-thumbnail" src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% elsif teaser contains "/images/" %}
-            "{{ teaser | prepend: base_path }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="publication teaser">
-      </div>
 
-      <div style="float: left; width: 70%;">
+  <article class="pub{% unless teaser %} pub--no-thumb{% endunless %}">
+
+    {% if teaser %}
+      <a href="{{ post.permalink | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img class="pub__thumb" loading="lazy"
+             src="{% if teaser contains '://' %}{{ teaser }}{% elsif teaser contains '/images/' %}{{ teaser | prepend: base_path }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}"
+             alt="">
+      </a>
     {% endif %}
 
-    <h2 style="margin-bottom: 0.5rem; font-size: 1.3rem; margin-top: 0;">
-      <a href="{{ post.permalink | relative_url }}">{{ post.title }}</a>
-    </h2>
-    
-    <p style="margin: 0.25rem 0;">
-      Published date: {{ post.date | date: "%Y-%m-%d" }}
-      {% if post.citation %}
-         &nbsp; {{ post.citation }}
+    <div>
+      <span class="pub__year">{{ post.date | date: "%Y" }}{% if post.status %} · {{ post.status }}{% endif %}</span>
+
+      <h2 class="pub__title">
+        <a href="{{ post.permalink | relative_url }}">{{ post.title }}</a>
+      </h2>
+
+      {% if post.authors %}
+        <p class="pub__authors">{{ post.authors }}</p>
       {% endif %}
-    </p>
-    
-    {% if post.authors %}
-      <p style="margin: 0.25rem 0; font-size: 0.95em;">{{ post.authors }}</p>
-    {% endif %}
-    
-    {% if post.paperurl %}
-      <p style="margin: 0.5rem 0 0 0;">
-        <a href="{{ post.paperurl }}"> [Paper] </a>
+
+      {% if post.citation %}
+        <p class="pub__venue">{{ post.citation }}</p>
+      {% endif %}
+
+      <p class="pub__actions">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+        {% if post.pdfurl %}<a href="{{ post.pdfurl }}">PDF</a>{% endif %}
+        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+        <a href="{{ post.permalink | relative_url }}">Details</a>
       </p>
-    {% endif %}
+    </div>
 
-    {% if teaser %}
-      </div>
-      <div style="clear: both;"></div>
-    {% endif %}
-
-  </div>
+  </article>
 
 {% endfor %}
 </div>

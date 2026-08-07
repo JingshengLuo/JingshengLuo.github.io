@@ -2,43 +2,17 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
+ * Icon fonts only.
  *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * All layout and typography now live in the hand-written, plain-CSS
+ * stylesheet at /assets/css/anthropic.css, which is loaded from
+ * _includes/head/custom.html. The Minimal Mistakes layout partials
+ * (reset, base, masthead, navigation, sidebar, archive, page, susy,
+ * breakpoint, themes) are deliberately no longer imported.
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
-
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-    "include/mixins",
-    "vendor/susy/susy",
-
-    "layout/reset",
-    "layout/base",
-
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-
-    "layout/forms",
-
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands",
-    "custom"
+    "vendor/font-awesome/brands"
 ;

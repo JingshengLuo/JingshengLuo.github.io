@@ -1,165 +1,165 @@
 ---
 permalink: /
 layout: single
-author_profile: true
-title: "About Me"
+title: "Zhengqian Jin"
+hide_title: true
+description: "Zhengqian Jin — Ph.D. candidate in energy storage at Xi'an Jiaotong University. Lithium metal batteries, anode-free cells, interfacial kinetics, and research-workflow design."
 ---
 
-Hello! I am **Zhengqian Jin** 👋, a Ph.D. candidate.
+<header class="hero">
+  <img class="hero__avatar" src="/images/profile.jpg" alt="Zhengqian Jin">
+  <h1 class="hero__name">Zhengqian Jin</h1>
+  <p class="hero__role">Ph.D. Candidate · Energy Storage · Xi&rsquo;an Jiaotong University</p>
+  <p class="hero__motto">&ldquo;We have the first snowflake. Now let&rsquo;s build a blizzard.&rdquo;</p>
+  <nav class="hero__links" aria-label="Profile links">
+    <a class="chip" href="mailto:omwtbarca@gmail.com">Email</a>
+    <a class="chip" href="/cv/">CV</a>
+    <a class="chip" href="https://orcid.org/0009-0002-7513-3708">ORCID</a>
+    <a class="chip" href="https://github.com/JingshengLuo">GitHub</a>
+    <a class="chip" href="https://x.com/EKL_Batteries">@EKL_Batteries</a>
+  </nav>
+</header>
 
-### 📬 Contact
-- Email: omwtbarca@gmail.com
+I work on **lithium metal batteries** — how lithium plates and strips, what the interphase does while it happens, and how much of that behaviour we can actually read off the data we already collect. Structure design, catalysis, and mechanism sit at the centre of it; a fair amount of Python sits underneath.
 
+A second, quieter thread runs alongside the electrochemistry: how research itself is organised. Literature triage, metadata, reproducible figures, and the small pieces of infrastructure that decide whether a result survives contact with the next person who reads it.
 
-### 🎓 Education
+## Research
 
-<table style="border: none; table-layout: fixed; width: 100%;">
-  <tr>
-    <td style="width: 80px; vertical-align: middle; border: none; padding-right: 15px;">
-      <img src="https://www.minmuslin.cn/logos/tongji-logo-light.png" style="width: 60px; max-width: none;">
-    </td>
-    <td style="vertical-align: middle; border: none;">
-      <strong>B.S. in Applied Chemistry</strong> 🧪<br>
-      Tongji University, Shanghai, China 🇨🇳<br>
-      <span style="font-size: 0.85em; color: gray;">2019 – 2023</span>
-    </td>
-  </tr>
-
-  <tr>
-    <td style="width: 80px; vertical-align: middle; border: none; padding-right: 15px;">
-      <img src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" style="width: 60px; max-width: none; border-radius: 4px;">
-    </td>
-    <td style="vertical-align: middle; border: none;">
-      <strong> Ph.D. Candidate</strong> 🔋<br>
-      National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology<br>
-      Xi’an Jiaotong University (XJTU), Xi’an, China 🇨🇳<br>
-      <span style="font-size: 0.85em; color: gray;">2023 – Present</span>
-    </td>
-  </tr>
-</table>
-
-  
-### 📍 Current Position
-- I work under the guidance of [Prof. Kai Xi](https://x-group-site.webflow.io/) & [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj) at the National Innovation Platform (Center) for Industry-Education Integration of Energy Storage Technology.
-
-### 🔬 Research Focus
-My research focuses on **lithium metal batteries**, and I am particularly interested in the areas of structure design, catalysts, material synthesis, and exploring the underlying mechanisms.
-
-- 🔋 **Lithium metal batteries (LMBs)** & anode-free cells
-- ⚗️ Interface catalysis and inhomogeneous reaction regulation
-- 📊 Distributed-parameter in-situ/operando characterization   
-  → *Multi-scale SEI & Li plating/stripping mechanisms*
-
-### 🩵 Hobbies & Interests
-- 🎨 Scientific visualization and aesthetic plots
-- 🇪🇸 Learning Spanish
-- ⚽ Football, 🥊 UFC Boxing, 🏈 NFL
-- 🏃 Long-distance running 
-
-### My gadget
-[→ View all utilities ](/toolkit/)
-
-
-### 🤖 Side Project
-I also run a PaperBot on X (formerly Twitter) that automatically shares new research in the battery field. You can follow it here:
-**@EKL_Batteries** → 🔗 https://x.com/EKL_Batteries
-
-<div markdown="0">
-  <a class="twitter-timeline" data-height="600" href="https://twitter.com/EKL_Batteries?ref_src=twsrc%5Etfw">Tweets by EKL_Batteries</a> 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="entry-list" markdown="0">
+  <div class="entry">
+    <p class="entry__title">Lithium metal &amp; anode-free cells</p>
+    <p class="entry__meta">Plating/stripping behaviour on Cu current collectors, SEI formation, and the kinetics that separate a stable interphase from a dendritic one.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Interface catalysis &amp; inhomogeneous reaction</p>
+    <p class="entry__meta">Catalytic conversion in Li–S systems; high-entropy layered hydroxides as a tunable platform; enthalpy–entropy compensation in interfacial kinetics.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Distributed-parameter <i>in situ</i> / <i>operando</i> characterisation</p>
+    <p class="entry__meta">Multi-scale readout of SEI and Li deposition, with an emphasis on protocols that other groups can actually reproduce.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Research infrastructure &amp; data assetisation</p>
+    <p class="entry__meta">Turning raw battery data into structured, citable assets — and studying the metadata layer that carries scholarship between machines.</p>
+  </div>
 </div>
 
+## Education &amp; Position
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Multiscale insights enable rational design of solvent-free dry electrode processing for advanced battery electrode fabrication<a href="https://t.co/J3FTIKcX3t">https://t.co/J3FTIKcX3t</a></p>&mdash; 🔋EKL Battery Papers (@EKL_Batteries) <a href="https://twitter.com/EKL_Batteries/status/2004372025234895011?ref_src=twsrc%5Etfw">December 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="entry-list" markdown="0">
 
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 2025 Battery Research Landscape: An Unofficial Report 📊<br>Moving beyond spreadsheets, we processed literature data from 2022-2025 to visualize the current state of battery research. 📍3 Key Observations:<a href="https://twitter.com/hashtag/BatteryResearch?src=hash&amp;ref_src=twsrc%5Etfw">#BatteryResearch</a> <a href="https://twitter.com/hashtag/LiMetal?src=hash&amp;ref_src=twsrc%5Etfw">#LiMetal</a> <a href="https://twitter.com/hashtag/SolidState?src=hash&amp;ref_src=twsrc%5Etfw">#SolidState</a> <a href="https://twitter.com/hashtag/ResearchTrends?src=hash&amp;ref_src=twsrc%5Etfw">#ResearchTrends</a> <a href="https://twitter.com/hashtag/AcademicTwitter?src=hash&amp;ref_src=twsrc%5Etfw">#AcademicTwitter</a> <a href="https://t.co/p0Xf5z1wXg">pic.twitter.com/p0Xf5z1wXg</a></p>&mdash; 🔋EKL Battery Papers (@EKL_Batteries) <a href="https://twitter.com/EKL_Batteries/status/2012787177030377924?ref_src=twsrc%5Etfw">January 18, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-
-
-
-<style>
-  .gallery {
-    display: flex;
-    flex-direction: column;     /* 改成垂直排列（单列） */
-    align-items: center;        /* 水平居中 */
-    gap: 40px;                  /* 图片之间的垂直间距，拉大一点更舒服 */
-    margin: 40px 0;
-    max-width: 800px;           /* 可选：限制整体最大宽度，避免超宽屏幕太拉伸 */
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .gallery-item {
-    width: 100%;                /* 占满容器宽度 */
-    max-width: 700px;           /* 统一最大宽度（你可调成 600px / 800px，根据喜好） */
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block;             /* 避免底部小间隙 */
-  }
-
-  .gallery-item:hover img {
-    transform: translateY(-8px) scale(1.08);  /* 稍微调小放大比例，避免太夸张 */
-    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
-    z-index: 10;
-  }
-
-  .gallery-item figcaption {
-    margin-top: 12px;
-    font-size: 0.95em;
-    color: #555;
-    line-height: 1.4;
-    max-width: 700px;           /* 和图片宽度对齐 */
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
-
-<section id="visualizations-gallery">
-  <h2>🎨Selected Visualizations</h2>
-  <p>A collection of inspiring scientific figures and data visualizations. These examples showcase elegant schematic designs, multi-scale mechanisms, performance comparisons, and trend analyses — reflecting my ongoing interest in creating clear, aesthetically pleasing plots to communicate complex battery research concepts.  All images are credited to their original sources.</p>
-
-  <div class="gallery">
-
-    <figure class="gallery-item">
-      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig1_HTML.png" alt="Fig. 1: Comparative performance of LDHs vs HELHs">
-      <figcaption><strong>Fig. 1</strong> — Radar charts and summary table comparing traditional LDHs and high-entropy HELHs across thermodynamic stability, electrochemical activity, tunability, and more. HELHs show superior overall performance with balanced trade-offs. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig2_HTML.jpg" alt="Fig. 2: Evolution scheme of HELHs with ML optimization">
-      <figcaption><strong>Fig. 2</strong> — Schematic evolution of HELHs, illustrating machine learning-driven element selection for enhanced catalytic performance in energy conversion/storage. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig7_HTML.png" alt="Fig. 7: OER activity bubble chart and element frequency">
-      <figcaption><strong>Fig. 7</strong> — (a) Bubble chart of OER activity for various HELHs (size by current density); (b) Frequency of metal elements in HELHs catalysts, with word cloud inset. Highlights common compositions driving performance. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig12_HTML.jpg" alt="Fig. 12: Synergistic catalysis and biomedical applications">
-      <figcaption><strong>Fig. 12</strong> — Synergistic catalysis mechanisms in HELHs nanozymes for ROS generation via multi-metal sites, plus outlook on biomedical uses (antimicrobial, biosensors, drug delivery). (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40820-025-02023-5/MediaObjects/40820_2025_2023_Fig13_HTML.jpg" alt="Fig. 13: Future outlook of HELHs research">
-      <figcaption><strong>Fig. 13</strong> — Future research strategies for HELHs: synthetic control, operando characterization, multiphysics integration, DFT/ML screening, and interdisciplinary expansion in energy, environment, and biomedicine. (Nano-Micro Lett. 18 (2026) 200. OA)</figcaption>
-    </figure>
-
+  <div class="entry entry--dated">
+    <div>
+      <p class="entry__title">Ph.D. Candidate, Electronic Science &amp; Technology</p>
+      <p class="entry__meta">
+        Xi&rsquo;an Jiaotong University, Xi&rsquo;an, China<br>
+        National Innovation Platform (Center) for Industry–Education Integration of Energy Storage Technology
+      </p>
+    </div>
+    <p class="entry__date">2023 — present</p>
   </div>
 
-  <p style="text-align:center; font-size:0.9em; color:#777; margin-top:30px;">
-    All images credited to their original publications.
-  </p>
-</section>
+  <div class="entry entry--dated">
+    <div>
+      <p class="entry__title">B.S. in Applied Chemistry</p>
+      <p class="entry__meta">Tongji University, Shanghai, China</p>
+    </div>
+    <p class="entry__date">2019 — 2023</p>
+  </div>
+
+</div>
+
+Advised by [Prof. Kai Xi](https://x-group-site.webflow.io/) and [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj).
+
+## Selected Visualisations
+
+A short set of figures from recent work. Scientific visualisation is a standing interest of mine — these are the ones I keep coming back to.
+
+<div class="gallery" markdown="0">
+
+  <figure>
+    <a href="https://doi.org/10.1002/adma.74260">
+      <img src="/images/viz-adma-74260.jpg" alt="Graphical abstract: intramolecular polarization–mediated solvation for low-temperature high-voltage lithium metal batteries" style="max-width:520px;margin-inline:auto;">
+    </a>
+    <figcaption>
+      Intramolecular polarisation reshapes the solvation shell so that Li<sup>+</sup> desolvates readily at &minus;30&nbsp;°C while the NCM811 surface stays intact to 4.9&nbsp;V — the weakly-solvated structure on the lower panel is the whole argument in one frame.
+      <span class="src">Cao, Jin, Li et&nbsp;al., <i>Advanced Materials</i> (2026) 74260</span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://doi.org/10.1002/adma.73517">
+      <img src="/images/viz-adma-73517.jpg" alt="Graphical abstract: electron-pinned interface engineering with gradient-ordered catalytic microzones for lithium–sulfur batteries" style="max-width:480px;margin-inline:auto;">
+    </a>
+    <figcaption>
+      Three catalytic microzones ordered by electron donation, Φ1 to Φ3, carrying the polysulfide through liquid–solid and then solid–solid conversion. The slow step of the Li–S cascade, usually drawn as a single arrow, gets three.
+      <span class="src">L. Jin, Z. Jin, T. Deng et&nbsp;al., <i>Advanced Materials</i> (2026) e73517</span>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://doi.org/10.1016/j.matt.2026.102777">
+      <img src="/images/viz-matter-102777.jpg" alt="Three-stage framework for digital research: collecting literature, processing information, integrating notes">
+    </a>
+    <figcaption>
+      Collecting, processing, integrating — the three-stage framework for digital research. Drawing the workflow out in full turned out to be the fastest way to find the places where it leaks.
+      <span class="src">Z. Jin &amp; K. Xi, <i>Matter</i> 9 (2026) 102777</span>
+    </figcaption>
+  </figure>
+
+</div>
+
+## Reading Surface
+
+The journals below are what [@EKL_Batteries](https://x.com/EKL_Batteries) watches — a PaperBot I run that pulls new battery and materials papers off RSS, filters them in Python, and posts what survives. It is also, roughly, my own reading surface.
+
+<div class="journal-wall" markdown="0">
+  <span class="jw-l jw-sans">Nature Medicine</span>
+  <span class="jw-m jw-light">Nature Electronics</span>
+  <span class="jw-m">Nature Synthesis</span>
+  <span class="jw-l jw-caps">Nature Reviews Materials</span>
+  <span class="jw-s jw-light">Nature Reviews Endocrinology</span>
+  <span class="jw-xl jw-sans">Nature Communications</span>
+  <span class="jw-l jw-italic">Science Advances</span>
+  <span class="jw-xl jw-caps jw-sky">Advanced Materials</span>
+  <span class="jw-l jw-caps">Advanced Energy Materials</span>
+  <span class="jw-m jw-caps">Advanced Functional Materials</span>
+  <span class="jw-m jw-caps">Advanced Science</span>
+  <span class="jw-xl">Chemical Reviews</span>
+  <span class="jw-l jw-sans">ACS Nano</span>
+  <span class="jw-m jw-light">Nano Letters</span>
+  <span class="jw-l jw-sans">Small</span>
+  <span class="jw-s jw-sans">Small Methods</span>
+  <span class="jw-l jw-italic">Materials Today</span>
+  <span class="jw-l jw-sky">Nano-Micro Letters</span>
+  <span class="jw-m jw-caps">Carbon Energy</span>
+  <span class="jw-s jw-light">Analytical Chemistry</span>
+  <span class="jw-m jw-light">Nano Today</span>
+  <span class="jw-m jw-italic">Research</span>
+  <span class="jw-xs">TrAC Trends in Analytical Chemistry</span>
+  <span class="jw-l jw-sans">Chemical Engineering Journal</span>
+  <span class="jw-m">Chemical Science</span>
+  <span class="jw-m jw-light">Green Chemistry</span>
+  <span class="jw-s jw-sans">ChemComm</span>
+  <span class="jw-m jw-caps">SusMat</span>
+  <span class="jw-xs">Biosensors &amp; Bioelectronics</span>
+  <span class="jw-s jw-sans">ACS Sensors</span>
+  <span class="jw-xl jw-sky jw-caps">Energy Storage Materials</span>
+  <span class="jw-xs">ACS Applied Materials &amp; Interfaces</span>
+  <span class="jw-s jw-light">Polymer Chemistry</span>
+  <span class="jw-m jw-caps">Water Research</span>
+  <span class="jw-s">Journal of Materials Chemistry</span>
+  <span class="jw-xs jw-light">Advanced Drug Delivery Reviews</span>
+  <span class="jw-l">Carbon</span>
+  <span class="jw-xs">Macromolecular Rapid Communications</span>
+  <p class="journal-wall__note">Watchlist · @EKL_Batteries</p>
+</div>
+
+## Tools
+
+I build small utilities when a workflow annoys me twice. They live on the [Toolkit](/toolkit/) page — a Markdown-native publishing helper, a few plotting and literature-processing scripts, and whatever else has proved worth keeping.
+
+## Beyond the Lab
+
+Scientific visualisation and figure design. Spanish, slowly. Football, boxing, and the NFL, mostly as a spectator. Long-distance running, mostly not.

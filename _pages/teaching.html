@@ -2,11 +2,17 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+prose: false
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if site.teaching.size > 0 %}
+  <div class="pub-list">
+  {% for post in site.teaching reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+  </div>
+{% else %}
+  <p class="page-lede">Nothing listed yet.</p>
+{% endif %}
