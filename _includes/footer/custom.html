@@ -78,7 +78,18 @@
      rather than showing a broken image. */
   document.addEventListener('error', function (e) {
     var el = e.target;
-    if (!(el instanceof HTMLImageElement) || !el.dataset.fallback) return;
+    if (!(el instanceof HTMLImageElement)) return;
+
+    /* Institution crests are hotlinked too. If one fails, drop the column
+       rather than leaving alt text sprawled across the entry. */
+    if (el.classList.contains('entry__crest')) {
+      var row = el.closest('.entry--crest');
+      el.remove();
+      if (row) row.classList.remove('entry--crest');
+      return;
+    }
+
+    if (!el.dataset.fallback) return;
     var a = el.closest('.jw-logo');
     if (!a) return;
     a.className = a.className.replace('jw-logo', 'jw-word');

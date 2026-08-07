@@ -1345,6 +1345,17 @@ figcaption {
   align-items: center;
   gap: 1.4rem 2.1rem;
 }
+/* the scattered/rotated treatment suits type, not logo cards — flatten it */
+.journal-wall--logos > *,
+.journal-wall--logos > *:nth-child(3n),
+.journal-wall--logos > *:nth-child(4n),
+.journal-wall--logos > *:nth-child(7n),
+.journal-wall--logos > *:nth-child(11n) { transform: none; }
+.journal-wall--logos a:hover,
+.journal-wall--logos a:nth-child(3n):hover,
+.journal-wall--logos a:nth-child(4n):hover,
+.journal-wall--logos a:nth-child(7n):hover,
+.journal-wall--logos a:nth-child(11n):hover { transform: translateY(-3px); }
 
 .jw-logo {
   display: inline-flex;
@@ -1434,6 +1445,8 @@ figcaption {
   gap: 1.1rem;
   align-items: start;
 }
+/* .entry--dated pins the date to column 2; with a crest it belongs in 3 */
+.entry--crest .entry__date { grid-column: 3; grid-row: 1; }
 .entry__crest {
   width: 58px;
   height: 58px;

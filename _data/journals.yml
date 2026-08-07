@@ -5,20 +5,22 @@
 # or the publisher adds referrer blocking, the card degrades to the wordmark
 # automatically — see the onerror handler in _includes/footer/custom.html.
 #
-# To use a self-hosted mark instead, drop the file into images/journals/ and
-# point `logo:` at it, e.g.  logo: /images/journals/adma.svg
+# To use a self-hosted mark instead, drop the file into images/ and
+# point `logo:` at it, e.g.  logo: /images/adma.png
 #
 # `weight` drives size in the wall: 3 = largest. Roughly tracks paper count.
 
 - name: Advanced Materials
   short: Adv. Mater.
   url: https://advanced.onlinelibrary.wiley.com/journal/15214095
+  logo: /images/adma.png
   papers: 2
   weight: 3
 
 - name: Advanced Energy Materials
   short: Adv. Energy Mater.
   url: https://advanced.onlinelibrary.wiley.com/journal/16146840
+  logo: /images/aem.png
   papers: 2
   weight: 3
 
@@ -32,34 +34,33 @@
 - name: Matter
   short: Matter
   url: https://www.cell.com/matter/home
-  logo: https://ars.els-cdn.com/content/image/X25902385.jpg
+  logo: /images/matter.png
   papers: 1
   weight: 2
 
 - name: Nano-Micro Letters
   short: Nano-Micro Lett.
   url: https://link.springer.com/journal/40820
-  logo: https://media.springernature.com/w316/springer-static/cover-hires/journal/40820.jpg
+  logo: /images/nml.png
   papers: 1
   weight: 2
 
 - name: Nano Energy
   short: Nano Energy
   url: https://www.sciencedirect.com/journal/nano-energy
-  logo: https://ars.els-cdn.com/content/image/X22112855.jpg
   papers: 1
   weight: 2
 
 - name: Advanced Functional Materials
   short: Adv. Funct. Mater.
   url: https://advanced.onlinelibrary.wiley.com/journal/16163028
+  logo: /images/afm.png
   papers: 1
   weight: 2
 
 - name: Journal of Energy Chemistry
   short: J. Energy Chem.
   url: https://www.sciencedirect.com/journal/journal-of-energy-chemistry
-  logo: https://ars.els-cdn.com/content/image/X20954956.jpg
   papers: 1
   weight: 1
 
@@ -73,7 +74,6 @@
 - name: Physical Chemistry Chemical Physics
   short: PCCP
   url: https://pubs.rsc.org/en/journals/journalissues/cp
-  logo: https://www.rsc.org/getContentAsset/cdbec9f9-b6de-431b-8d70-fea9b3f96b97/97c19dfb-06fc-4638-b657-b9d8300eab48/pccp-journal-cover.jpg?language=en
   papers: 1
   weight: 1
 

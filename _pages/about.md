@@ -3,7 +3,7 @@ permalink: /
 layout: single
 title: "Zhengqian Jin"
 hide_title: true
-description: "Zhengqian Jin — Ph.D. candidate in energy storage at Xi'an Jiaotong University. Lithium metal batteries, anode-free cells, interfacial kinetics, and research-workflow design."
+description: "Zhengqian Jin — Ph.D. candidate in Electronic Science and Technology, specialising in Energy Storage Science and Engineering at Xi'an Jiaotong University. Lithium metal anodes, anode-free cells, and high-entropy catalytic materials."
 ---
 
 <header class="hero">
@@ -19,20 +19,16 @@ description: "Zhengqian Jin — Ph.D. candidate in energy storage at Xi'an Jiaot
   </nav>
 </header>
 
-I work on **lithium metal batteries** — how lithium plates and strips, what the interphase does while it happens, and how much of that behaviour we can actually read off the data we already collect. Structure design, catalysis, and mechanism sit at the centre of it; a fair amount of Python sits underneath.
+Hi — I&rsquo;m Zhengqian Jin, a Ph.D. candidate in Electronic Science and Technology, specialising in Energy Storage Science and Engineering at Xi&rsquo;an Jiaotong University.
 
-A second, quieter thread runs alongside the electrochemistry: how research itself is organised. Literature triage, metadata, reproducible figures, and the small pieces of infrastructure that decide whether a result survives contact with the next person who reads it.
-
-## Beyond the Lab
-
-Scientific visualisation and figure design. Spanish, slowly. Football, boxing, and the NFL, mostly as a spectator. Long-distance running, mostly not.
+My research centres on advanced battery electrochemistry and catalytic interphases — lithium metal anodes, anode-free configurations, and high-entropy catalytic materials for next-generation energy storage.
 
 ## Education &amp; Position
 
 <div class="entry-list" markdown="0">
 
   <div class="entry entry--dated entry--crest">
-    <img class="entry__crest" src="https://zeyu-zhu.github.io/webpage/images/XJTU.jpg" alt="Xi'an Jiaotong University" loading="lazy">
+    <img class="entry__crest" src="https://vi.xjtu.edu.cn/images/a3-2jdxhblue.png" alt="Xi'an Jiaotong University" loading="lazy">
     <div>
       <p class="entry__title">Ph.D. Candidate, Electronic Science &amp; Technology</p>
       <p class="entry__meta">
@@ -56,30 +52,21 @@ Scientific visualisation and figure design. Spanish, slowly. Football, boxing, a
 
 Advised by [Prof. Kai Xi](https://x-group-site.webflow.io/) and [Prof. Shujiang Ding](https://gr.xjtu.edu.cn/web/dingsj).
 
-## Research
+## Beyond the Lab
 
-<div class="entry-list" markdown="0">
-  <div class="entry">
-    <p class="entry__title">Lithium metal &amp; anode-free cells</p>
-    <p class="entry__meta">Plating/stripping behaviour on Cu current collectors, SEI formation, and the kinetics that separate a stable interphase from a dendritic one.</p>
-  </div>
-  <div class="entry">
-    <p class="entry__title">Interface catalysis &amp; inhomogeneous reaction</p>
-    <p class="entry__meta">Catalytic conversion in Li–S systems; high-entropy layered hydroxides as a tunable platform; enthalpy–entropy compensation in interfacial kinetics.</p>
-  </div>
-  <div class="entry">
-    <p class="entry__title">Distributed-parameter <i>in situ</i> / <i>operando</i> characterisation</p>
-    <p class="entry__meta">Multi-scale readout of SEI and Li deposition, with an emphasis on protocols that other groups can actually reproduce.</p>
-  </div>
-  <div class="entry">
-    <p class="entry__title">Research infrastructure &amp; data assetisation</p>
-    <p class="entry__meta">Turning raw battery data into structured, citable assets — and studying the metadata layer that carries scholarship between machines.</p>
-  </div>
-</div>
+Scientific visualisation and figure design. Spanish, slowly. Football, boxing, and the NFL, mostly as a spectator. Long-distance running, mostly not.
+
+## @EKL_Batteries
+
+Alongside the papers I run [@EKL_Batteries](https://x.com/EKL_Batteries), a PaperBot that pulls new battery and materials work off RSS, filters it in Python, and posts what survives. It is also, roughly, my own reading surface.
+
+## Tools
+
+I build small utilities when a workflow annoys me twice. They live on the [Toolkit](/toolkit/) page — a Markdown-native publishing helper, a few plotting and literature-processing scripts, and whatever else has proved worth keeping.
 
 ## Selected Visualisations
 
-A short set of figures from recent work, newest first. Scientific visualisation is a standing interest of mine — these are the ones I keep coming back to. Click any figure to enlarge it.
+Figures I designed and drew for recent papers, newest first. Scientific visualisation is a standing interest of mine, not a byproduct of writing them up — these are the ones I keep coming back to. Click any figure to enlarge.
 
 <div class="gallery" markdown="0">
 
@@ -149,6 +136,27 @@ A short set of figures from recent work, newest first. Scientific visualisation 
 
 </div>
 
+## Research
+
+<div class="entry-list" markdown="0">
+  <div class="entry">
+    <p class="entry__title">Lithium metal &amp; anode-free cells</p>
+    <p class="entry__meta">Plating/stripping behaviour on Cu current collectors, SEI formation, and the kinetics that separate a stable interphase from a dendritic one.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Interface catalysis &amp; inhomogeneous reaction</p>
+    <p class="entry__meta">Catalytic conversion in Li–S systems; high-entropy layered hydroxides as a tunable platform; enthalpy–entropy compensation in interfacial kinetics.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Distributed-parameter <i>in situ</i> / <i>operando</i> characterisation</p>
+    <p class="entry__meta">Multi-scale readout of SEI and Li deposition, with an emphasis on protocols that other groups can actually reproduce.</p>
+  </div>
+  <div class="entry">
+    <p class="entry__title">Research infrastructure &amp; data assetisation</p>
+    <p class="entry__meta">Turning raw battery data into structured, citable assets — and studying the metadata layer that carries scholarship between machines.</p>
+  </div>
+</div>
+
 ## Published In
 
 Where the work has appeared so far — mark size roughly tracks how much of it landed there.
@@ -170,9 +178,3 @@ Where the work has appeared so far — mark size roughly tracks how much of it l
   {%- endfor -%}
   <p class="journal-wall__note">Full list on the <a href="/publications/">Publications</a> page</p>
 </div>
-
-Alongside the papers I run [@EKL_Batteries](https://x.com/EKL_Batteries), a PaperBot that pulls new battery and materials work off RSS, filters it in Python, and posts what survives. It is also, roughly, my own reading surface.
-
-## Tools
-
-I build small utilities when a workflow annoys me twice. They live on the [Toolkit](/toolkit/) page — a Markdown-native publishing helper, a few plotting and literature-processing scripts, and whatever else has proved worth keeping.
