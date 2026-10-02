@@ -10,6 +10,12 @@
 #
 # `weight` drives size in the wall: 3 = largest. Roughly tracks paper count.
 
+- name: Nano Research Energy
+  short: Nano Res. Energy
+  url: https://www.sciopen.com/journal/2791-0091
+  papers: 1
+  weight: 2
+
 - name: Advanced Materials
   short: Adv. Mater.
   url: https://advanced.onlinelibrary.wiley.com/journal/15214095

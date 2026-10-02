@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Curriculum Vitae"
-lede: "Last updated August 2026."
+lede: "Last updated October 2026."
 permalink: /cv/
 redirect_from:
   - /resume
