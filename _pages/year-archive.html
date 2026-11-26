@@ -1,10 +1,11 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Writing"
-lede: "Ideas, reading notes, and working drafts, grouped by year."
+permalink: /perspectives/
+title: "Perspectives"
+lede: "Research perspectives, preprints, and reading notes."
 prose: false
 redirect_from:
+  - /year-archive/
   - /wordpress/blog-posts/
   - /blog/
 ---
@@ -22,6 +23,7 @@ redirect_from:
   <article class="post-item">
     <div class="post-item__meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      {% if post.status %}<span>{{ post.status | escape }}</span>{% endif %}
       {% if post.tags.size > 0 %}<span>{{ post.tags | join: " · " }}</span>{% endif %}
     </div>
 
@@ -33,6 +35,23 @@ redirect_from:
       <p class="post-item__excerpt">{{ post.summary }}</p>
     {% elsif post.excerpt %}
       <p class="post-item__excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+    {% endif %}
+    {% if post.pdf or post.doi %}
+      <p class="post-item__links">
+        {% if post.pdf %}<a href="{{ post.pdf | relative_url }}">Read PDF</a>{% endif %}
+        {% if post.doi %}
+          {% if post.pdf %} · {% endif %}<a href="https://doi.org/{{ post.doi | escape }}">DOI: {{ post.doi | escape }}</a>
+        {% endif %}
+      </p>
+    {% endif %}
+    {% if post.citation_author %}
+      <p class="post-item__excerpt"><strong>Cite:</strong> {{ post.citation_author | escape }} ({{ year }}). <em>{{ post.title | escape }}</em>.
+        {% if post.doi %}
+          <a href="https://doi.org/{{ post.doi | escape }}">https://doi.org/{{ post.doi | escape }}</a>
+        {% else %}
+          <a href="{{ post.url | absolute_url }}">{{ post.url | absolute_url }}</a>
+        {% endif %}
+      </p>
     {% endif %}
   </article>
 {% endfor %}
