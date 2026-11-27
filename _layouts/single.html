@@ -3,6 +3,11 @@ layout: default
 ---
 
 {% include base_path %}
+{% assign goatcounter_code = site.goatcounter_code | default: '' | strip %}
+{% assign show_article_visits = false %}
+{% if jekyll.environment == 'production' and page.article_visits and goatcounter_code != empty %}
+  {% assign show_article_visits = true %}
+{% endif %}
 
 <article class="wrap{% if page.width == 'wide' %} wrap--wide{% endif %}"
          itemscope itemtype="https://schema.org/CreativeWork">
@@ -17,7 +22,7 @@ layout: default
         <p class="article-header__authors">{{ page.authors }}</p>
       {% endif %}
 
-      {% if page.date or page.venue or page.status or page.read_time %}
+      {% if page.date or page.venue or page.status or page.read_time or show_article_visits %}
         <div class="article-header__meta">
           {% if page.status and page.status != 'Preprint' %}<span class="badge">{{ page.status }}</span>{% endif %}
           {% if page.date %}
@@ -25,6 +30,11 @@ layout: default
           {% endif %}
           {% if page.venue %}<span>{{ page.venue }}</span>{% endif %}
           {% if page.read_time %}<span>{% include read-time.html %}</span>{% endif %}
+          {% if show_article_visits %}
+            <span id="article-visits" data-code="{{ goatcounter_code | escape }}"
+                  data-path="{{ page.url | relative_url | escape }}" hidden></span>
+            <script defer src="{{ '/assets/js/article-visits.js' | relative_url }}"></script>
+          {% endif %}
         </div>
       {% endif %}
     </header>

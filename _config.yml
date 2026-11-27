@@ -170,6 +170,8 @@ social:
 
 
 # Analytics
+# GoatCounter account name only (the part before .goatcounter.com).
+goatcounter_code: ""
 analytics:
   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
@@ -261,6 +263,7 @@ defaults:
       path: ""
       type: posts
     values:
+      article_visits: true
       layout: single
       author_profile: true
       read_time: true
