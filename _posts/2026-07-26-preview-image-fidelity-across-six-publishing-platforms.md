@@ -3,6 +3,8 @@ title: "Preview Image Fidelity Across Six Publishing Platforms"
 date: 2026-07-26
 permalink: /posts/2026/07/preview-image-fidelity/
 status: "Preprint"
+citation_author: "Jin, Z."
+pdf: /files/preview-image-fidelity-jin-2026.pdf
 authors: "Zhengqian Jin<sup>1,*</sup>"
 venue: "Opinion · not submitted for formal publication"
 read_time: false
@@ -32,7 +34,7 @@ publication. Cite it as: Z. Jin, *Preview Image Fidelity Across Six Publishing P
 </div>
 
 <div class="btn-row" markdown="0">
-  <a class="btn btn--accent" href="/files/preview-image-fidelity-jin-2026.pdf" target="_blank" rel="noopener">Download PDF</a>
+  <a class="btn btn--accent" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
 </div>
 
 ## I. Background and Scope
