@@ -171,7 +171,7 @@ social:
 
 # Analytics
 # GoatCounter account name only (the part before .goatcounter.com).
-goatcounter_code: ""
+goatcounter_code: "omwtbarca"
 analytics:
   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
