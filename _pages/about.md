@@ -71,6 +71,14 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
 <div class="gallery" markdown="0">
 
   <figure>
+    <img class="zoomable" src="/images/viz-chem-103321.jpg" alt="Hard and soft ions in inner and outer coordination shells shift the zinc electrode potential" loading="lazy">
+    <figcaption>
+      A soft anion in the inner shell and a hard cation in the outer shell shift the zinc electrode potential upward. Reversing the pairing shifts it downward.
+      <span class="src">Author-created schematic for <a href="https://doi.org/10.1016/j.chempr.2026.103321">Jin et&nbsp;al., <i>Chem</i> 12(11) (2026), 103321, Fig. 1</a></span>
+    </figcaption>
+  </figure>
+
+  <figure>
     <img class="zoomable" src="/images/viz-adma-74260.jpg" alt="Graphical abstract: intramolecular polarization–mediated solvation for low-temperature high-voltage lithium metal batteries" loading="lazy">
     <figcaption>
       Intramolecular polarisation reshapes the solvation shell so that Li<sup>+</sup> desolvates readily at &minus;30&nbsp;°C while the NCM811 surface stays intact to 4.9&nbsp;V — the weakly-solvated structure on the lower panel is the whole argument in one frame.

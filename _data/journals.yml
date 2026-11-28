@@ -31,6 +31,19 @@
   papers: 1
   weight: 2
 
+- name: Chem
+  short: Chem
+  url: https://www.cell.com/chem/home
+  logo: /images/chem.png
+  papers: 1
+  weight: 2
+
+- name: Nano Research Energy
+  short: Nano Res. Energy
+  url: https://www.sciopen.com/journal/2791-0091
+  papers: 1
+  weight: 2
+
 - name: Matter
   short: Matter
   url: https://www.cell.com/matter/home
@@ -55,8 +68,8 @@
   short: Adv. Funct. Mater.
   url: https://advanced.onlinelibrary.wiley.com/journal/16163028
   logo: /images/afm.png
-  papers: 1
-  weight: 2
+  papers: 2
+  weight: 3
 
 - name: Journal of Energy Chemistry
   short: J. Energy Chem.
