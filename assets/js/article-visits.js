@@ -9,11 +9,12 @@
   const script = document.createElement('script');
   script.dataset.goatcounter = `${site}/count`;
   script.dataset.goatcounterSettings = JSON.stringify({ path });
+  script.src = 'https://gc.zgo.at/count.js';
   script.async = true;
   document.head.append(script);
 
   fetch(`${site}/counter/${encodeURIComponent(path)}.json`, { credentials: 'omit' })
-    .then((response) => response.ok ? response.json() : null)
+    .then((response) => (response.ok || response.status === 404) ? response.json() : null)
     .then((data) => {
       if (!data || !/^[0-9][0-9,.\s]*$/.test(data.count)) return;
 
