@@ -2,11 +2,9 @@
 title: "Preview Image Fidelity Across Six Publishing Platforms"
 date: 2026-07-26
 permalink: /posts/2026/07/preview-image-fidelity/
-status: "Preprint"
 citation_author: "Jin, Z."
 pdf: /files/preview-image-fidelity-jin-2026.pdf
 authors: "Zhengqian Jin<sup>1,*</sup>"
-venue: "Opinion · not submitted for formal publication"
 read_time: false
 summary: "Six publishers, one question: what image actually reaches a social preview card, and at what resolution? Presence of an og:image is not the same thing as a legible card — and the four ways it fails need four different fixes."
 description: "An opinion piece on Open Graph metadata quality in scholarly publishing: measured preview-image dimensions, aspect ratios and declared card types across ACS, Nature, Cell Press, Wiley, RSC and arXiv."
@@ -28,8 +26,7 @@ tags:
 </p>
 
 <div class="notice" markdown="1">
-**Preprint.** This note is posted here as a preprint and is not intended for formal
-publication. Cite it as: Z. Jin, *Preview Image Fidelity Across Six Publishing Platforms*,
+**Cite as:** Z. Jin, *Preview Image Fidelity Across Six Publishing Platforms*,
 2026, <https://jingshengluo.github.io/posts/2026/07/preview-image-fidelity/>
 </div>
 
