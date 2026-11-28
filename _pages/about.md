@@ -66,7 +66,7 @@ I build small utilities when a workflow annoys me twice. They live on the [Toolk
 
 ## Selected Visualisations
 
-Figures I designed and drew for recent papers, newest first. Scientific visualisation is a standing interest of mine, not a byproduct of writing them up — these are the ones I keep coming back to. Click any figure to enlarge.
+Figures I designed and drew for recent papers, newest first. Scientific visualisation is a standing interest of mine, not a byproduct of writing them up — these are the ones I keep coming back to. Figures are shown here for academic portfolio purposes. See the original publication linked below each figure for its source and reuse terms. Click any figure to enlarge.
 
 <div class="gallery" markdown="0">
 
