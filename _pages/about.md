@@ -66,7 +66,7 @@ I build small utilities when a workflow annoys me twice. They live on the [Toolk
 
 ## Selected Visualisations
 
-Figures I designed and drew for recent papers, newest first. Scientific visualisation is a standing interest of mine, not a byproduct of writing them up — these are the ones I keep coming back to. Click any figure to enlarge.
+Selected figures from papers I co-authored, newest first. Scientific visualisation is a standing interest of mine — these are the ones I keep coming back to. Click any figure to enlarge. Source publications and applicable reuse policies are linked below each image.
 
 <div class="gallery" markdown="0">
 
@@ -75,6 +75,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       Intramolecular polarisation reshapes the solvation shell so that Li<sup>+</sup> desolvates readily at &minus;30&nbsp;°C while the NCM811 surface stays intact to 4.9&nbsp;V — the weakly-solvated structure on the lower panel is the whole argument in one frame.
       <span class="src"><a href="https://doi.org/10.1002/adma.74260">Cao, Jin, Li et&nbsp;al., <i>Advanced Materials</i> (2026) 74260</a></span>
+      <span class="src">Published graphical abstract. Publisher: Wiley-VCH. <a href="https://www.wiley.com/research-intelligence/content-solutions/permissions/author-rights">Wiley author reuse rights</a>; no Creative Commons licence is asserted here.</span>
     </figcaption>
   </figure>
 
@@ -83,6 +84,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       Collecting, processing, integrating — the three-stage framework for digital research. Drawing the workflow out in full turned out to be the fastest way to find the places where it leaks.
       <span class="src"><a href="https://doi.org/10.1016/j.matt.2026.102777">Z. Jin &amp; K. Xi, <i>Matter</i> 9 (2026) 102777</a></span>
+      <span class="src">Published research-workflow figure. Publisher: Elsevier / Cell Press. <a href="https://www.elsevier.com/about/policies-and-standards/copyright">Elsevier author reuse rights</a>; no Creative Commons licence is asserted here.</span>
     </figcaption>
   </figure>
 
@@ -91,6 +93,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       Three catalytic microzones ordered by electron donation, Φ1 to Φ3, carrying the polysulfide through liquid–solid and then solid–solid conversion. The slow step of the Li–S cascade, usually drawn as a single arrow, gets three.
       <span class="src"><a href="https://doi.org/10.1002/adma.73517">L. Jin, Z. Jin, T. Deng et&nbsp;al., <i>Advanced Materials</i> (2026) e73517</a></span>
+      <span class="src">Published graphical abstract. Publisher: Wiley-VCH. <a href="https://www.wiley.com/research-intelligence/content-solutions/permissions/author-rights">Wiley author reuse rights</a>; no Creative Commons licence is asserted here.</span>
     </figcaption>
   </figure>
 
@@ -99,6 +102,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       Conventional layered double hydroxides against their high-entropy counterparts, side by side. Configurational entropy buys stability without giving up the tunability that made LDHs interesting in the first place.
       <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 1</a></span>
+      <span class="src">&copy; The Author(s) 2026. Published by Springer Nature. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure displayed without adaptation.</span>
     </figcaption>
   </figure>
 
@@ -107,6 +111,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       How the composition space gets searched. The machine-learning loop on the right is doing what a decade of one-element-at-a-time substitution did on the left, which is the point of the figure.
       <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 2</a></span>
+      <span class="src">&copy; The Author(s) 2026. Published by Springer Nature. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure displayed without adaptation.</span>
     </figcaption>
   </figure>
 
@@ -115,6 +120,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       Every reported OER overpotential in one bubble field, with element frequency underneath. Two plots that answer &ldquo;what has actually been tried, and did it work?&rdquo; without a table.
       <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 7</a></span>
+      <span class="src">&copy; The Author(s) 2026. Published by Springer Nature. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure displayed without adaptation.</span>
     </figcaption>
   </figure>
 
@@ -123,6 +129,7 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       The synergy argument, extended past electrocatalysis into biomedicine. Same material class, very different failure criteria — worth drawing on one canvas.
       <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 12</a></span>
+      <span class="src">&copy; The Author(s) 2026. Published by Springer Nature. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure displayed without adaptation.</span>
     </figcaption>
   </figure>
 
@@ -131,10 +138,13 @@ Figures I designed and drew for recent papers, newest first. Scientific visualis
     <figcaption>
       The outlook panel. Review figures like this usually age badly; this one was drawn to be falsifiable, which is a different design brief.
       <span class="src"><a href="https://doi.org/10.1007/s40820-025-02023-5">Jin et&nbsp;al., <i>Nano-Micro Letters</i> (2026), Fig. 13</a></span>
+      <span class="src">&copy; The Author(s) 2026. Published by Springer Nature. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Figure displayed without adaptation.</span>
     </figcaption>
   </figure>
 
 </div>
+
+<p class="notice">The <i>Nano-Micro Letters</i> figures above are from Zhengqian Jin, Zhenjiang Cao, Li Jin, Shujiang Ding and Kai Xi, <a href="https://doi.org/10.1007/s40820-025-02023-5">&ldquo;High-Entropy Layered Hydroxides: Pioneering Synthesis, Mechanistic Insights, and Multifunctional Applications in Sustainable Energy and Biomedicine&rdquo;</a>, 18, 200 (2026), licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Copyright and third-party rights remain with their respective holders; displaying an image here does not grant permission for further reuse.</p>
 
 ## Research
 
